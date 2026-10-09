@@ -1,0 +1,267 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Aug  1 15:24:52 2019
+# Process ID: 6016
+# Current directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5964 E:\bildiri ve makaleler\kitap\fpga\uygulamalar\prj_bolum8_uyg1\prj_bolum8_uyg1.xpr
+# Log file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg1/vivado.log
+# Journal file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg1/prj_bolum8_uyg1.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source uyg81.tcl
+close_sim
+close_project
+create_project prj_bolum8_uyg3 {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg3} -part xc7a100tcsg324-1
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg3/prj_bolum8_uyg3.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg3/prj_bolum8_uyg3.srcs/sources_1/new
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg3/prj_bolum8_uyg3.srcs/sources_1/new
+file mkdir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg3/prj_bolum8_uyg3.srcs/sources_1/new}
+close [ open {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg3/prj_bolum8_uyg3.srcs/sources_1/new/uyg83.vhd} w ]
+add_files {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg3/prj_bolum8_uyg3.srcs/sources_1/new/uyg83.vhd}}
+update_compile_order -fileset sources_1
+launch_simulation
+source uyg83.tcl
+add_force {/uyg83/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg83/rst} -radix hex {0 0ns}
+add_force {/uyg83/motor} -radix hex {1 0ns}
+add_force {/uyg83/kapi} -radix hex {1 0ns}
+add_force {/uyg83/emniyet} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg83/kapi} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg83/kapi} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg83/emniyet} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg83/emniyet} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg83/motor} -radix hex {0 0ns}
+run 100 ns
+add_force {/uyg83/emniyet} -radix hex {0 0ns}
+run 100 ns
+synth_design -rtl -name rtl_1
+close_sim
+close_project
+create_project prj_bolum8_uyg5 {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg5} -part xc7a100tcsg324-1
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg5/prj_bolum8_uyg5.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg5/prj_bolum8_uyg5.srcs/sources_1/new
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg5/prj_bolum8_uyg5.srcs/sources_1/new
+file mkdir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg5/prj_bolum8_uyg5.srcs/sources_1/new}
+close [ open {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg5/prj_bolum8_uyg5.srcs/sources_1/new/uyg85.vhd} w ]
+add_files {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg5/prj_bolum8_uyg5.srcs/sources_1/new/uyg85.vhd}}
+update_compile_order -fileset sources_1
+launch_simulation
+source uyg85.tcl
+add_force {/uyg85/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg85/gir} -radix hex {a2b100ee 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg85/gir} -radix hex {0706 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg85.tcl
+add_force {/uyg85/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg85/rst} -radix hex {0 0ns}
+add_force {/uyg85/gir} -radix hex {01070006 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg85.tcl
+add_force {/uyg85/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg85/gir} -radix hex {5 0ns}
+run 100 ns
+add_force {/uyg85/gir} -radix hex {30010007 0ns}
+run 100 ns
+add_force {/uyg85/gir} -radix hex {7 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg85.tcl
+add_force {/uyg85/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg85/rst} -radix hex {0 0ns}
+add_force {/uyg85/gir} -radix hex {0500a001 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg85.tcl
+add_force {/uyg85/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg85/rst} -radix hex {0 0ns}
+add_force {/uyg85/gir} -radix hex {01a00005 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg85.tcl
+add_force {/uyg85/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg85/gir} -radix hex {5 0ns}
+run 100 ns
+add_force {/uyg85/gir} -radix hex {37 0ns}
+run 100 ns
+add_force {/uyg85/gir} -radix hex {05004200 0ns}
+run 100 ns
+add_force {/uyg85/rst} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg85.tcl
+add_force {/uyg85/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg85/rst} -radix hex {0 0ns}
+add_force {/uyg85/gir} -radix hex {52 0ns}
+run 100 ns
+add_force {/uyg85/gir} -radix hex {4f01 0ns}
+run 100 ns
+add_force {/uyg85/rst} -radix hex {1 0ns}
+run 100 ns
+add_force {/uyg85/rst} -radix hex {0 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg85.tcl
+add_force {/uyg85/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg85/rst} -radix hex {0 0ns}
+add_force {/uyg85/gir} -radix hex {39 0ns}
+run 100 ns
+add_force {/uyg85/gir} -radix hex {7 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg85.tcl
+add_force {/uyg85/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg85/rst} -radix hex {0 0ns}
+add_force {/uyg85/gir} -radix hex {67 0ns}
+run 100 ns
+add_force {/uyg85/rst} -radix hex {1 0ns}
+run 100 ns
+add_force {/uyg85/gir} -radix hex {fa 0ns}
+run 100 ns
+add_force {/uyg85/rst} -radix hex {0 0ns}
+run 100 ns
+add_force {/uyg85/gir} -radix hex {1260e07f 0ns}
+add_force {/uyg85/rst} -radix hex {1 0ns}
+run 100 ns
+add_force {/uyg85/rst} -radix hex {0 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg85.tcl
+add_force {/uyg85/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg85/rst} -radix hex {0 0ns}
+add_force {/uyg85/gir} -radix hex {1e7 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg85/rst} -radix hex {1 0ns}
+add_force {/uyg85/gir} -radix hex {62007fff 0ns}
+run 100 ns
+add_force {/uyg85/rst} -radix hex {0 0ns}
+run 100 ns
+synth_design -rtl -name rtl_1
+close_sim
+close_project
+create_project prj_bolum8_uyg7 {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg7} -part xc7a100tcsg324-1
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg7/prj_bolum8_uyg7.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg7/prj_bolum8_uyg7.srcs/sources_1/new
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg7/prj_bolum8_uyg7.srcs/sources_1/new
+file mkdir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg7/prj_bolum8_uyg7.srcs/sources_1/new}
+close [ open {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg7/prj_bolum8_uyg7.srcs/sources_1/new/uyg87.vhd} w ]
+add_files {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg7/prj_bolum8_uyg7.srcs/sources_1/new/uyg87.vhd}}
+update_compile_order -fileset sources_1
+launch_simulation
+source uyg87.tcl
+add_force {/uyg87/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg87/gir} -radix hex {7 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg87.tcl
+add_force {/uyg87/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg87/gir} -radix hex {7 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg87.tcl
+add_force {/uyg87/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg87/gir} -radix hex {7 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg87.tcl
+add_force {/uyg87/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg87/gir} -radix hex {7 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg87.tcl
+add_force {/uyg87/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg87/gir} -radix hex {7 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg87.tcl
+add_force {/uyg87/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg87/gir} -radix hex {7 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg87.tcl
+add_force {/uyg87/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg87/rst} -radix hex {0 0ns}
+add_force {/uyg87/gir} -radix hex {7 0ns}
+run 100 ns
+add_force {/uyg87/gir} -radix hex {1 0ns}
+run 100 ns
+add_force {/uyg87/gir} -radix hex {0 0ns}
+run 100 ns
+add_force {/uyg87/gir} -radix hex {f 0ns}
+run 100 ns
+synth_design -rtl -name rtl_1
+close_sim
+close_project
+create_project prj_bolum8_uyg9 {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg9} -part xc7a100tcsg324-1
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg9/prj_bolum8_uyg9.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg9/prj_bolum8_uyg9.srcs/sources_1/new
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg9/prj_bolum8_uyg9.srcs/sources_1/new
+file mkdir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg9/prj_bolum8_uyg9.srcs/sources_1/new}
+close [ open {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg9/prj_bolum8_uyg9.srcs/sources_1/new/uyg89.vhd} w ]
+add_files {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg9/prj_bolum8_uyg9.srcs/sources_1/new/uyg89.vhd}}
+update_compile_order -fileset sources_1
+launch_simulation
+source uyg89.tcl
+add_force {/uyg89/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg89/rst} -radix hex {0 0ns}
+add_force {/uyg89/gir} -radix hex {23 0ns}
+run 100 ns
+add_force {/uyg89/gir} -radix hex {29 0ns}
+run 100 ns
+add_force {/uyg89/gir} -radix hex {38 0ns}
+run 100 ns
+add_force {/uyg89/gir} -radix hex {87 0ns}
+add_force {/uyg89/rst} -radix hex {1 0ns}
+run 100 ns
+add_force {/uyg89/rst} -radix hex {0 0ns}
+run 100 ns
+synth_design -rtl -name rtl_1
+close_sim

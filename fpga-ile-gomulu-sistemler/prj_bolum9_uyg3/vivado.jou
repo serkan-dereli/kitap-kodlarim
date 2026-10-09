@@ -1,0 +1,183 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Aug 10 17:30:17 2019
+# Process ID: 6644
+# Current directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7260 E:\bildiri ve makaleler\kitap\fpga\uygulamalar\prj_bolum9_uyg3\prj_bolum9_uyg3.xpr
+# Log file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg3/vivado.log
+# Journal file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg3/prj_bolum9_uyg3.xpr}
+update_compile_order -fileset sources_1
+close_project
+create_project prj_bolum10_uyg1_ {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_} -part xc7a100tcsg324-1
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new
+file mkdir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new}
+close [ open {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd} w ]
+add_files {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd}}
+update_compile_order -fileset sources_1
+import_files -norecurse {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1/prj_bolum10_uyg1.srcs/sources_1/new/blokRAM.vhd} {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1/prj_bolum10_uyg1.srcs/sources_1/new/dosyadanOKU.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source uyg101.tcl
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+launch_simulation
+source uyg101.tcl
+close_sim
+launch_simulation
+source uyg101.tcl
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg101.tcl
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg101.tcl
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg101.tcl
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg101.tcl
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 500 ns
+run 500 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg101.tcl
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg101.tcl
+add_force {/uyg101/rst} -radix hex {0 0ns}
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 500 ns
+run 500 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+source uyg101.tcl
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg101/rst} -radix hex {0 0ns}
+run 500 ns
+run 500 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim

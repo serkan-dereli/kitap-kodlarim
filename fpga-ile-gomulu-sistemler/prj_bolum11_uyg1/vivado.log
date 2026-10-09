@@ -1,0 +1,2119 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Aug 16 20:06:28 2019
+# Process ID: 1740
+# Current directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3116 E:\bildiri ve makaleler\kitap\fpga\uygulamalar\prj_bolum11_uyg1\prj_bolum11_uyg1.xpr
+# Log file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg1/vivado.log
+# Journal file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg1/prj_bolum11_uyg1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:54 ; elapsed = 00:00:43 . Memory (MB): peak = 720.633 ; gain = 39.660
+update_compile_order -fileset sources_1
+close_project
+create_project prj_bolum11_uyg3 {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3} -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+create_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:22 . Memory (MB): peak = 782.879 ; gain = 25.117
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new
+file mkdir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new}
+close [ open {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new/uyg113.vhd} w ]
+add_files {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new/uyg113.vhd}}
+update_compile_order -fileset sources_1
+create_ip -name mult_gen -vendor xilinx.com -library ip -version 12.0 -module_name mult_gen_0 -dir {e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip}
+set_property -dict [list CONFIG.PortAWidth {8} CONFIG.PortBWidth {8} CONFIG.OutputWidthHigh {15}] [get_ips mult_gen_0]
+generate_target {instantiation_template} [get_files {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mult_gen_0'...
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+generate_target all [get_files {e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci}]
+WARNING: [Vivado 12-818] No files matched 'e:/bildiri'
+WARNING: [Vivado 12-818] No files matched 've'
+WARNING: [Vivado 12-818] No files matched 'makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci'
+export_ip_user_files -of_objects [get_files {e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci}] -no_script -sync -force -quiet
+WARNING: [Vivado 12-818] No files matched 'e:/bildiri'
+WARNING: [Vivado 12-818] No files matched 've'
+WARNING: [Vivado 12-818] No files matched 'makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci'
+export_simulation -of_objects [get_files {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci}}] -directory {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.ip_user_files/sim_scripts} -ip_user_files_dir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.ip_user_files} -ipstatic_source_dir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.ip_user_files/ipstatic} -lib_map_path [list {modelsim=E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.cache/compile_simlib/modelsim} {questa=E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.cache/compile_simlib/questa} {riviera=E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.cache/compile_simlib/riviera} {activehdl=E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset mult_gen_0
+set_property top mult_gen_0 [get_fileset mult_gen_0]
+move_files -fileset [get_fileset mult_gen_0] [get_files -of_objects [get_fileset sources_1] {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci}}]
+launch_run mult_gen_0_synth_1
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mult_gen_0'...
+[Fri Aug 16 20:52:39 2019] Launched mult_gen_0_synth_1...
+Run output will be captured here: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/mult_gen_0_synth_1/runme.log
+wait_on_run mult_gen_0_synth_1
+
+[Fri Aug 16 20:52:39 2019] Waiting for mult_gen_0_synth_1 to finish...
+[Fri Aug 16 20:52:45 2019] Waiting for mult_gen_0_synth_1 to finish...
+[Fri Aug 16 20:52:50 2019] Waiting for mult_gen_0_synth_1 to finish...
+[Fri Aug 16 20:52:56 2019] Waiting for mult_gen_0_synth_1 to finish...
+[Fri Aug 16 20:53:07 2019] Waiting for mult_gen_0_synth_1 to finish...
+[Fri Aug 16 20:53:17 2019] Waiting for mult_gen_0_synth_1 to finish...
+[Fri Aug 16 20:53:28 2019] Waiting for mult_gen_0_synth_1 to finish...
+[Fri Aug 16 20:53:39 2019] Waiting for mult_gen_0_synth_1 to finish...
+[Fri Aug 16 20:54:00 2019] Waiting for mult_gen_0_synth_1 to finish...
+[Fri Aug 16 20:54:22 2019] Waiting for mult_gen_0_synth_1 to finish...
+[Fri Aug 16 20:54:43 2019] Waiting for mult_gen_0_synth_1 to finish...
+[Fri Aug 16 20:55:04 2019] Waiting for mult_gen_0_synth_1 to finish...
+[Fri Aug 16 20:55:47 2019] Waiting for mult_gen_0_synth_1 to finish...
+[Fri Aug 16 20:56:30 2019] Waiting for mult_gen_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log mult_gen_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mult_gen_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source mult_gen_0.tcl -notrace
+Command: synth_design -top mult_gen_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6412 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 347.852 ; gain = 94.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:68]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:71]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:71]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_A_WIDTH bound to: 8 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 8 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 15 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 0 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_13' declared at 'e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_13' [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (5#1) [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:68]
+WARNING: [Synth 8-3331] design mult_gen_v12_0_13_viv has unconnected port CE
+WARNING: [Synth 8-3331] design mult_gen_v12_0_13_viv has unconnected port SCLR
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 409.738 ; gain = 156.230
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 409.738 ; gain = 156.230
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/mult_gen_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/mult_gen_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  MULT_AND => LUT2: 36 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 738.469 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:50 ; elapsed = 00:02:06 . Memory (MB): peak = 738.469 ; gain = 484.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:50 ; elapsed = 00:02:06 . Memory (MB): peak = 738.469 ; gain = 484.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/mult_gen_0_synth_1/dont_touch.xdc}, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:50 ; elapsed = 00:02:06 . Memory (MB): peak = 738.469 ; gain = 484.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:51 ; elapsed = 00:02:08 . Memory (MB): peak = 738.469 ; gain = 484.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design mult_gen_v12_0_13_viv has unconnected port CE
+WARNING: [Synth 8-3331] design mult_gen_v12_0_13_viv has unconnected port SCLR
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][17]) is unused and will be removed from module mult_gen_v12_0_13_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][16]) is unused and will be removed from module mult_gen_v12_0_13_viv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:54 ; elapsed = 00:02:10 . Memory (MB): peak = 738.469 ; gain = 484.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:37 ; elapsed = 00:02:56 . Memory (MB): peak = 739.453 ; gain = 485.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:38 ; elapsed = 00:02:56 . Memory (MB): peak = 739.578 ; gain = 486.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:38 ; elapsed = 00:02:56 . Memory (MB): peak = 759.246 ; gain = 505.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:42 ; elapsed = 00:03:01 . Memory (MB): peak = 759.246 ; gain = 505.738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:42 ; elapsed = 00:03:01 . Memory (MB): peak = 759.246 ; gain = 505.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:42 ; elapsed = 00:03:01 . Memory (MB): peak = 759.246 ; gain = 505.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:42 ; elapsed = 00:03:01 . Memory (MB): peak = 759.246 ; gain = 505.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:42 ; elapsed = 00:03:01 . Memory (MB): peak = 759.246 ; gain = 505.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:42 ; elapsed = 00:03:01 . Memory (MB): peak = 759.246 ; gain = 505.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     9|
+|2     |LUT1     |     3|
+|3     |LUT2     |    37|
+|4     |LUT3     |    10|
+|5     |LUT4     |    28|
+|6     |MULT_AND |    35|
+|7     |MUXCY    |    36|
+|8     |XORCY    |    40|
+|9     |FDRE     |    16|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:42 ; elapsed = 00:03:01 . Memory (MB): peak = 759.246 ; gain = 505.738
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:23 ; elapsed = 00:02:23 . Memory (MB): peak = 759.246 ; gain = 177.008
+Synthesis Optimization Complete : Time (s): cpu = 00:02:43 ; elapsed = 00:03:01 . Memory (MB): peak = 759.246 ; gain = 505.738
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 120 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 49 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 14 instances
+  MULT_AND => LUT2: 35 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:49 ; elapsed = 00:03:09 . Memory (MB): peak = 761.086 ; gain = 519.047
+INFO: [Common 17-1381] The checkpoint 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/mult_gen_0_synth_1/mult_gen_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/mult_gen_0_synth_1/mult_gen_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mult_gen_0_utilization_synth.rpt -pb mult_gen_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.227 . Memory (MB): peak = 761.086 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 16 20:56:40 2019...
+[Fri Aug 16 20:56:47 2019] mult_gen_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:13 ; elapsed = 00:04:07 . Memory (MB): peak = 786.141 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg113' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj uyg113_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/mult_gen_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult_gen_0
+INFO: [VRFC 10-311] analyzing module mult_gen_0_mult_gen_v12_0_13
+INFO: [VRFC 10-311] analyzing module mult_gen_0_luts
+INFO: [VRFC 10-311] analyzing module mult_gen_0_mult_gen_v12_0_13_viv
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-2421] module glbl is previously defined, ignoring this definition [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim/glbl.v:6]
+"xvhdl --incr --relax -prj uyg113_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new/uyg113.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg113
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 786.141 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '14' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto bf2f2967b60949c498bec52e30937043 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot uyg113_behav xil_defaultlib.uyg113 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.mult_gen_0_luts
+Compiling module xil_defaultlib.mult_gen_0_mult_gen_v12_0_13_viv
+Compiling module xil_defaultlib.mult_gen_0_mult_gen_v12_0_13
+Compiling module xil_defaultlib.mult_gen_0
+Compiling architecture behavioral of entity xil_defaultlib.uyg113
+Built simulation snapshot uyg113_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/bildiri -notrace
+couldn't read file "E:/bildiri": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Aug 16 20:57:20 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 786.141 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '17' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg113_behav -key {Behavioral:sim_1:Functional:uyg113} -tclbatch {uyg113.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg113.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 804.008 ; gain = 17.867
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg113_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 804.008 ; gain = 17.867
+add_force {/uyg113/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg113/a} -radix hex {38 0ns}
+add_force {/uyg113/b} -radix hex {6a 0ns}
+run 500 ns
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fp_divide -dir {e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip}
+create_ip: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 854.004 ; gain = 0.000
+set_property -dict [list CONFIG.Component_Name {fp_divide} CONFIG.Operation_Type {Divide} CONFIG.A_Precision_Type {Single} CONFIG.C_A_Exponent_Width {8} CONFIG.C_A_Fraction_Width {24} CONFIG.Result_Precision_Type {Single} CONFIG.C_Result_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {24} CONFIG.C_Mult_Usage {No_Usage} CONFIG.C_Latency {29} CONFIG.C_Rate {1}] [get_ips fp_divide]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'fp_divide' to 'fp_divide' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/fp_divide/fp_divide.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fp_divide'...
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 854.004 ; gain = 0.000
+create_ip -name div_gen -vendor xilinx.com -library ip -version 5.1 -module_name div_8bit -dir {e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {div_8bit} CONFIG.dividend_and_quotient_width {8} CONFIG.divisor_width {8} CONFIG.fractional_width {8} CONFIG.latency {12}] [get_ips div_8bit]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'div_8bit' to 'div_8bit' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'div_8bit'...
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/fp_divide/fp_divide.xci}}] -no_script -reset -force -quiet
+remove_files  {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/fp_divide/fp_divide.xci}}
+create_ip -name mult_gen -vendor xilinx.com -library ip -version 12.0 -module_name mult_8bit -dir {e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {mult_8bit} CONFIG.PortAWidth {8} CONFIG.PortBWidth {8} CONFIG.OutputWidthHigh {15}] [get_ips mult_8bit]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'mult_8bit' to 'mult_8bit' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_8bit/mult_8bit.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mult_8bit'...
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset mult_gen_0 {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci}}
+INFO: [Project 1-386] Moving file 'e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci' from fileset 'mult_gen_0' to fileset 'sources_1'.
+remove_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 854.004 ; gain = 0.000
+update_compile_order -fileset sources_1
+generate_target all [get_files {e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit.xci}]
+WARNING: [Vivado 12-818] No files matched 'e:/bildiri'
+WARNING: [Vivado 12-818] No files matched 've'
+WARNING: [Vivado 12-818] No files matched 'makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit.xci'
+export_ip_user_files -of_objects [get_files {e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit.xci}] -no_script -sync -force -quiet
+WARNING: [Vivado 12-818] No files matched 'e:/bildiri'
+WARNING: [Vivado 12-818] No files matched 've'
+WARNING: [Vivado 12-818] No files matched 'makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit.xci'
+export_simulation -of_objects [get_files {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit.xci}}] -directory {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.ip_user_files/sim_scripts} -ip_user_files_dir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.ip_user_files} -ipstatic_source_dir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.ip_user_files/ipstatic} -lib_map_path [list {modelsim=E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.cache/compile_simlib/modelsim} {questa=E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.cache/compile_simlib/questa} {riviera=E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.cache/compile_simlib/riviera} {activehdl=E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset div_8bit
+set_property top div_8bit [get_fileset div_8bit]
+move_files -fileset [get_fileset div_8bit] [get_files -of_objects [get_fileset sources_1] {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit.xci}}]
+generate_target all [get_files {e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_8bit/mult_8bit.xci}]
+WARNING: [Vivado 12-818] No files matched 'e:/bildiri'
+WARNING: [Vivado 12-818] No files matched 've'
+WARNING: [Vivado 12-818] No files matched 'makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_8bit/mult_8bit.xci'
+export_ip_user_files -of_objects [get_files {e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_8bit/mult_8bit.xci}] -no_script -sync -force -quiet
+WARNING: [Vivado 12-818] No files matched 'e:/bildiri'
+WARNING: [Vivado 12-818] No files matched 've'
+WARNING: [Vivado 12-818] No files matched 'makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_8bit/mult_8bit.xci'
+export_simulation -of_objects [get_files {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_8bit/mult_8bit.xci}}] -directory {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.ip_user_files/sim_scripts} -ip_user_files_dir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.ip_user_files} -ipstatic_source_dir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.ip_user_files/ipstatic} -lib_map_path [list {modelsim=E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.cache/compile_simlib/modelsim} {questa=E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.cache/compile_simlib/questa} {riviera=E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.cache/compile_simlib/riviera} {activehdl=E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset mult_8bit
+set_property top mult_8bit [get_fileset mult_8bit]
+move_files -fileset [get_fileset mult_8bit] [get_files -of_objects [get_fileset sources_1] {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_8bit/mult_8bit.xci}}]
+launch_run {div_8bit_synth_1 mult_8bit_synth_1}
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'div_8bit'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mult_8bit'...
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mult_8bit, cache-ID = dd1f9ca52e04b247; cache size = 0.298 MB.
+config_ip_cache: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 854.004 ; gain = 0.000
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_8bit/mult_8bit.xci' is already up-to-date
+[Fri Aug 16 23:26:44 2019] Launched div_8bit_synth_1, mult_8bit_synth_1...
+Run output will be captured here:
+div_8bit_synth_1: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/div_8bit_synth_1/runme.log
+mult_8bit_synth_1: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/mult_8bit_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 854.004 ; gain = 0.000
+wait_on_run div_8bit_synth_1
+
+[Fri Aug 16 23:26:45 2019] Waiting for div_8bit_synth_1 to finish...
+[Fri Aug 16 23:26:51 2019] Waiting for div_8bit_synth_1 to finish...
+[Fri Aug 16 23:26:57 2019] Waiting for div_8bit_synth_1 to finish...
+[Fri Aug 16 23:27:03 2019] Waiting for div_8bit_synth_1 to finish...
+[Fri Aug 16 23:27:14 2019] Waiting for div_8bit_synth_1 to finish...
+[Fri Aug 16 23:27:25 2019] Waiting for div_8bit_synth_1 to finish...
+[Fri Aug 16 23:27:37 2019] Waiting for div_8bit_synth_1 to finish...
+[Fri Aug 16 23:27:48 2019] Waiting for div_8bit_synth_1 to finish...
+[Fri Aug 16 23:28:12 2019] Waiting for div_8bit_synth_1 to finish...
+[Fri Aug 16 23:28:34 2019] Waiting for div_8bit_synth_1 to finish...
+[Fri Aug 16 23:28:57 2019] Waiting for div_8bit_synth_1 to finish...
+[Fri Aug 16 23:29:20 2019] Waiting for div_8bit_synth_1 to finish...
+[Fri Aug 16 23:30:00 2019] Waiting for div_8bit_synth_1 to finish...
+[Fri Aug 16 23:30:40 2019] Waiting for div_8bit_synth_1 to finish...
+[Fri Aug 16 23:31:25 2019] Waiting for div_8bit_synth_1 to finish...
+
+*** Running vivado
+    with args -log div_8bit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source div_8bit.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source div_8bit.tcl -notrace
+Command: synth_design -top div_8bit -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2220 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 348.926 ; gain = 94.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'div_8bit' [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/synth/div_8bit.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 12 - type: integer 
+	Parameter ALGORITHM_TYPE bound to: 1 - type: integer 
+	Parameter DIVISOR_WIDTH bound to: 8 - type: integer 
+	Parameter DIVIDEND_WIDTH bound to: 8 - type: integer 
+	Parameter SIGNED_B bound to: 1 - type: integer 
+	Parameter DIVCLK_SEL bound to: 1 - type: integer 
+	Parameter FRACTIONAL_B bound to: 0 - type: integer 
+	Parameter FRACTIONAL_WIDTH bound to: 8 - type: integer 
+	Parameter C_HAS_DIV_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVISOR_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVISOR_TLAST bound to: 0 - type: integer 
+	Parameter C_S_AXIS_DIVISOR_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXIS_DIVISOR_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVIDEND_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVIDEND_TLAST bound to: 0 - type: integer 
+	Parameter C_S_AXIS_DIVIDEND_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXIS_DIVIDEND_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_DOUT_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_AXIS_DOUT_TUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'div_gen_v5_1_12' declared at 'e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/hdl/div_gen_v5_1_vh_rfs.vhd:13849' bound to instance 'U0' of component 'div_gen_v5_1_12' [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/synth/div_8bit.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'div_8bit' (12#1) [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/synth/div_8bit.vhd:71]
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port ce
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port aset
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port sset
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port sinit
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized36 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized36 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized36 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized36 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized33 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized33 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized33 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized33 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized29 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized29 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized29 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized29 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized21 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized21 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized21 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized21 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized17 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized17 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized17 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port c_out
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port aset
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_viv has unconnected port b_in
+WARNING: [Synth 8-3331] design c_addsub_viv has unconnected port a_signed
+WARNING: [Synth 8-3331] design c_addsub_viv has unconnected port b_signed
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized27 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized27 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized27 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized27 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized19 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized19 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized19 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized19 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized38 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized38 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized38 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized38 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_addsub_lut6__parameterized1 has unconnected port c_out
+WARNING: [Synth 8-3331] design c_addsub_lut6__parameterized1 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_lut6__parameterized1 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_addsub_lut6__parameterized1 has unconnected port aset
+WARNING: [Synth 8-3331] design c_addsub_lut6__parameterized1 has unconnected port ainit
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:12 ; elapsed = 00:01:21 . Memory (MB): peak = 448.633 ; gain = 194.660
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:13 ; elapsed = 00:01:23 . Memory (MB): peak = 448.633 ; gain = 194.660
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 162 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit_ooc.xdc] for cell 'U0'
+Parsing XDC File [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/div_8bit_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/div_8bit_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.271 . Memory (MB): peak = 742.195 ; gain = 0.063
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:16 ; elapsed = 00:02:47 . Memory (MB): peak = 742.195 ; gain = 488.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:16 ; elapsed = 00:02:47 . Memory (MB): peak = 742.195 ; gain = 488.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/div_8bit_synth_1/dont_touch.xdc}, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:16 ; elapsed = 00:02:47 . Memory (MB): peak = 742.195 ; gain = 488.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:18 ; elapsed = 00:02:50 . Memory (MB): peak = 742.195 ; gain = 488.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:24 ; elapsed = 00:02:56 . Memory (MB): peak = 742.195 ; gain = 488.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:09 ; elapsed = 00:03:44 . Memory (MB): peak = 745.117 ; gain = 491.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:09 ; elapsed = 00:03:45 . Memory (MB): peak = 757.207 ; gain = 503.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:10 ; elapsed = 00:03:46 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:15 ; elapsed = 00:03:50 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:15 ; elapsed = 00:03:50 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:15 ; elapsed = 00:03:51 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:15 ; elapsed = 00:03:51 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:15 ; elapsed = 00:03:51 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:15 ; elapsed = 00:03:51 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT1   |    22|
+|2     |LUT2   |    27|
+|3     |LUT3   |    70|
+|4     |LUT4   |     9|
+|5     |LUT5   |     6|
+|6     |LUT6   |    11|
+|7     |MUXCY  |    81|
+|8     |SRL16E |     3|
+|9     |XORCY  |    81|
+|10    |FDRE   |   282|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:15 ; elapsed = 00:03:51 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:33 ; elapsed = 00:03:03 . Memory (MB): peak = 767.383 ; gain = 219.848
+Synthesis Optimization Complete : Time (s): cpu = 00:03:16 ; elapsed = 00:03:51 . Memory (MB): peak = 767.383 ; gain = 513.410
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 162 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 27 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 27 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:21 ; elapsed = 00:03:59 . Memory (MB): peak = 768.992 ; gain = 526.676
+INFO: [Common 17-1381] The checkpoint 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/div_8bit_synth_1/div_8bit.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit.xci
+INFO: [Coretcl 2-1174] Renamed 95 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/div_8bit_synth_1/div_8bit.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file div_8bit_utilization_synth.rpt -pb div_8bit_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.282 . Memory (MB): peak = 768.992 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 16 23:31:51 2019...
+[Fri Aug 16 23:31:54 2019] div_8bit_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:16 ; elapsed = 00:05:09 . Memory (MB): peak = 854.004 ; gain = 0.000
+wait_on_run div_8bit_synth_1
+wait_on_run mult_8bit_synth_1
+
+[Fri Aug 16 23:31:54 2019] Waiting for div_8bit_synth_1 to finish...
+
+*** Running vivado
+    with args -log div_8bit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source div_8bit.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source div_8bit.tcl -notrace
+Command: synth_design -top div_8bit -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2220 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 348.926 ; gain = 94.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'div_8bit' [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/synth/div_8bit.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 12 - type: integer 
+	Parameter ALGORITHM_TYPE bound to: 1 - type: integer 
+	Parameter DIVISOR_WIDTH bound to: 8 - type: integer 
+	Parameter DIVIDEND_WIDTH bound to: 8 - type: integer 
+	Parameter SIGNED_B bound to: 1 - type: integer 
+	Parameter DIVCLK_SEL bound to: 1 - type: integer 
+	Parameter FRACTIONAL_B bound to: 0 - type: integer 
+	Parameter FRACTIONAL_WIDTH bound to: 8 - type: integer 
+	Parameter C_HAS_DIV_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVISOR_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVISOR_TLAST bound to: 0 - type: integer 
+	Parameter C_S_AXIS_DIVISOR_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXIS_DIVISOR_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVIDEND_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVIDEND_TLAST bound to: 0 - type: integer 
+	Parameter C_S_AXIS_DIVIDEND_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXIS_DIVIDEND_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_DOUT_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_AXIS_DOUT_TUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'div_gen_v5_1_12' declared at 'e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/hdl/div_gen_v5_1_vh_rfs.vhd:13849' bound to instance 'U0' of component 'div_gen_v5_1_12' [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/synth/div_8bit.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'div_8bit' (12#1) [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/synth/div_8bit.vhd:71]
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port ce
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port aset
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port sset
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port sinit
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized36 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized36 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized36 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized36 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized33 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized33 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized33 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized33 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized29 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized29 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized29 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized29 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized21 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized21 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized21 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized21 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized17 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized17 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized17 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port c_out
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port aset
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_lut6 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_viv has unconnected port b_in
+WARNING: [Synth 8-3331] design c_addsub_viv has unconnected port a_signed
+WARNING: [Synth 8-3331] design c_addsub_viv has unconnected port b_signed
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized27 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized27 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized27 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized27 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized19 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized19 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized19 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized19 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized38 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized38 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized38 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized38 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_addsub_lut6__parameterized1 has unconnected port c_out
+WARNING: [Synth 8-3331] design c_addsub_lut6__parameterized1 has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_lut6__parameterized1 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_addsub_lut6__parameterized1 has unconnected port aset
+WARNING: [Synth 8-3331] design c_addsub_lut6__parameterized1 has unconnected port ainit
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:12 ; elapsed = 00:01:21 . Memory (MB): peak = 448.633 ; gain = 194.660
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:13 ; elapsed = 00:01:23 . Memory (MB): peak = 448.633 ; gain = 194.660
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 162 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit_ooc.xdc] for cell 'U0'
+Parsing XDC File [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/div_8bit_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/div_8bit_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.271 . Memory (MB): peak = 742.195 ; gain = 0.063
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:16 ; elapsed = 00:02:47 . Memory (MB): peak = 742.195 ; gain = 488.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:16 ; elapsed = 00:02:47 . Memory (MB): peak = 742.195 ; gain = 488.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/div_8bit_synth_1/dont_touch.xdc}, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:16 ; elapsed = 00:02:47 . Memory (MB): peak = 742.195 ; gain = 488.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:18 ; elapsed = 00:02:50 . Memory (MB): peak = 742.195 ; gain = 488.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:24 ; elapsed = 00:02:56 . Memory (MB): peak = 742.195 ; gain = 488.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:09 ; elapsed = 00:03:44 . Memory (MB): peak = 745.117 ; gain = 491.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:09 ; elapsed = 00:03:45 . Memory (MB): peak = 757.207 ; gain = 503.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:10 ; elapsed = 00:03:46 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:15 ; elapsed = 00:03:50 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:15 ; elapsed = 00:03:50 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:15 ; elapsed = 00:03:51 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:15 ; elapsed = 00:03:51 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:15 ; elapsed = 00:03:51 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:15 ; elapsed = 00:03:51 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT1   |    22|
+|2     |LUT2   |    27|
+|3     |LUT3   |    70|
+|4     |LUT4   |     9|
+|5     |LUT5   |     6|
+|6     |LUT6   |    11|
+|7     |MUXCY  |    81|
+|8     |SRL16E |     3|
+|9     |XORCY  |    81|
+|10    |FDRE   |   282|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:15 ; elapsed = 00:03:51 . Memory (MB): peak = 767.383 ; gain = 513.410
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:33 ; elapsed = 00:03:03 . Memory (MB): peak = 767.383 ; gain = 219.848
+Synthesis Optimization Complete : Time (s): cpu = 00:03:16 ; elapsed = 00:03:51 . Memory (MB): peak = 767.383 ; gain = 513.410
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 162 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 27 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 27 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:21 ; elapsed = 00:03:59 . Memory (MB): peak = 768.992 ; gain = 526.676
+INFO: [Common 17-1381] The checkpoint 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/div_8bit_synth_1/div_8bit.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit.xci
+INFO: [Coretcl 2-1174] Renamed 95 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/div_8bit_synth_1/div_8bit.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file div_8bit_utilization_synth.rpt -pb div_8bit_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.282 . Memory (MB): peak = 768.992 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 16 23:31:51 2019...
+[Fri Aug 16 23:31:55 2019] div_8bit_synth_1 finished
+[Fri Aug 16 23:31:55 2019] Waiting for mult_8bit_synth_1 to finish...
+[Fri Aug 16 23:32:01 2019] Waiting for mult_8bit_synth_1 to finish...
+[Fri Aug 16 23:32:08 2019] Waiting for mult_8bit_synth_1 to finish...
+[Fri Aug 16 23:32:13 2019] Waiting for mult_8bit_synth_1 to finish...
+[Fri Aug 16 23:32:25 2019] Waiting for mult_8bit_synth_1 to finish...
+[Fri Aug 16 23:32:36 2019] Waiting for mult_8bit_synth_1 to finish...
+
+*** Running vivado
+    with args -log mult_8bit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mult_8bit.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source mult_8bit.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP mult_8bit, cache-ID = dd1f9ca52e04b247.
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 16 23:32:38 2019...
+[Fri Aug 16 23:32:42 2019] mult_8bit_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:47 . Memory (MB): peak = 854.004 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg113' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj uyg113_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div_8bit
+INFO: [VRFC 10-311] analyzing module div_8bit_div_gen_v5_1_12
+INFO: [VRFC 10-311] analyzing module div_8bit_addsubreg_v
+INFO: [VRFC 10-311] analyzing module div_8bit_addsubreg_v_10
+INFO: [VRFC 10-311] analyzing module div_8bit_addsubreg_v_12
+INFO: [VRFC 10-311] analyzing module div_8bit_addsubreg_v_14
+INFO: [VRFC 10-311] analyzing module div_8bit_addsubreg_v_2
+INFO: [VRFC 10-311] analyzing module div_8bit_addsubreg_v_4
+INFO: [VRFC 10-311] analyzing module div_8bit_addsubreg_v_6
+INFO: [VRFC 10-311] analyzing module div_8bit_addsubreg_v_8
+INFO: [VRFC 10-311] analyzing module div_8bit_addsubreg_v__parameterized0
+INFO: [VRFC 10-311] analyzing module div_8bit_bip_sdivider_synth
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_lut6
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_lut6_24
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_lut6_29
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_lut6_34
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_lut6_39
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_lut6_44
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_lut6_49
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_lut6_54
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_lut6__parameterized1
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_viv
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_viv_23
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_viv_28
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_viv_33
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_viv_38
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_viv_43
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_viv_48
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_viv_53
+INFO: [VRFC 10-311] analyzing module div_8bit_c_addsub_viv__parameterized0
+INFO: [VRFC 10-311] analyzing module div_8bit_c_twos_comp_viv
+INFO: [VRFC 10-311] analyzing module div_8bit_c_twos_comp_viv__parameterized0
+INFO: [VRFC 10-311] analyzing module div_8bit_c_twos_comp_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module div_8bit_c_twos_comp_viv__parameterized1_1
+INFO: [VRFC 10-311] analyzing module div_8bit_cmp2s_v
+INFO: [VRFC 10-311] analyzing module div_8bit_cmp2s_v__parameterized0
+INFO: [VRFC 10-311] analyzing module div_8bit_cmp2s_v__parameterized1
+INFO: [VRFC 10-311] analyzing module div_8bit_cmp2s_v__parameterized1_0
+INFO: [VRFC 10-311] analyzing module div_8bit_div_gen_synth
+INFO: [VRFC 10-311] analyzing module div_8bit_div_gen_v5_1_12_viv
+INFO: [VRFC 10-311] analyzing module div_8bit_dividervdc_v
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized11
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized13
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized15
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized17
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized19
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized21
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized23
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized25
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized27
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized29
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized3
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized31
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized33
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized36
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized38
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized3_18
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized5
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized5_11
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized5_13
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized5_15
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized5_17
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized5_3
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized5_5
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized5_7
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized5_9
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_16
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_19
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_20
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_21
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_22
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_25
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_27
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_30
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_32
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_35
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_37
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_40
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_42
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_45
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_47
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_50
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_52
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_55
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized7_57
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized9
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized9_26
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized9_31
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized9_36
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized9_41
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized9_46
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized9_51
+INFO: [VRFC 10-311] analyzing module div_8bit_xbip_pipe_v3_0_4_viv__parameterized9_56
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_8bit/mult_8bit_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult_8bit
+INFO: [VRFC 10-311] analyzing module mult_8bit_mult_gen_v12_0_13
+INFO: [VRFC 10-311] analyzing module mult_8bit_luts
+INFO: [VRFC 10-311] analyzing module mult_8bit_mult_gen_v12_0_13_viv
+"xvhdl --incr --relax -prj uyg113_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new/uyg113.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg113
+run_program: Time (s): cpu = 00:00:11 ; elapsed = 00:00:48 . Memory (MB): peak = 854.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '48' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto bf2f2967b60949c498bec52e30937043 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot uyg113_behav xil_defaultlib.uyg113 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.mult_8bit_luts
+Compiling module xil_defaultlib.mult_8bit_mult_gen_v12_0_13_viv
+Compiling module xil_defaultlib.mult_8bit_mult_gen_v12_0_13
+Compiling module xil_defaultlib.mult_8bit
+Compiling module unisims_ver.VCC
+Compiling module unisims_ver.FDRE_default_1
+Compiling module unisims_ver.SRL16E_default
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_54
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_53
+Compiling module xil_defaultlib.div_8bit_addsubreg_v
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_49
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_48
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_2
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_44
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_43
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_4
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_39
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_38
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_6
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_34
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_33
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_8
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_29
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_28
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_10
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_24
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_23
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_12
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_14
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT6
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6__paramete...
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv__parameter...
+Compiling module xil_defaultlib.div_8bit_addsubreg_v__parameteri...
+Compiling module xil_defaultlib.div_8bit_dividervdc_v
+Compiling module xil_defaultlib.div_8bit_c_twos_comp_viv
+Compiling module xil_defaultlib.div_8bit_cmp2s_v
+Compiling module xil_defaultlib.div_8bit_c_twos_comp_viv__parame...
+Compiling module xil_defaultlib.div_8bit_cmp2s_v__parameterized0
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_twos_comp_viv__parame...
+Compiling module xil_defaultlib.div_8bit_cmp2s_v__parameterized1
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_twos_comp_viv__parame...
+Compiling module xil_defaultlib.div_8bit_cmp2s_v__parameterized1...
+Compiling module xil_defaultlib.div_8bit_bip_sdivider_synth
+Compiling module xil_defaultlib.div_8bit_div_gen_synth
+Compiling module xil_defaultlib.div_8bit_div_gen_v5_1_12_viv
+Compiling module xil_defaultlib.div_8bit_div_gen_v5_1_12
+Compiling module xil_defaultlib.div_8bit
+Compiling architecture behavioral of entity xil_defaultlib.uyg113
+Built simulation snapshot uyg113_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:31 . Memory (MB): peak = 854.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '30' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg113_behav -key {Behavioral:sim_1:Functional:uyg113} -tclbatch {uyg113.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg113.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 854.004 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg113_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:26 ; elapsed = 00:01:30 . Memory (MB): peak = 854.004 ; gain = 0.000
+add_force {/uyg113/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg113/op} -radix hex {1 0ns}
+add_force {/uyg113/op} -radix hex {0 0ns}
+add_force {/uyg113/s1} -radix hex {65 0ns}
+add_force {/uyg113/s2} -radix hex {23 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/uyg113/s1} -radix hex {23 0ns}
+add_force {/uyg113/s2} -radix hex {65 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/uyg113/op} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/uyg113/op} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg113' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj uyg113_vlog.prj"
+"xvhdl --incr --relax -prj uyg113_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new/uyg113.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg113
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 863.492 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '12' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto bf2f2967b60949c498bec52e30937043 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot uyg113_behav xil_defaultlib.uyg113 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.mult_8bit_luts
+Compiling module xil_defaultlib.mult_8bit_mult_gen_v12_0_13_viv
+Compiling module xil_defaultlib.mult_8bit_mult_gen_v12_0_13
+Compiling module xil_defaultlib.mult_8bit
+Compiling module unisims_ver.VCC
+Compiling module unisims_ver.FDRE_default_1
+Compiling module unisims_ver.SRL16E_default
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_54
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_53
+Compiling module xil_defaultlib.div_8bit_addsubreg_v
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_49
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_48
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_2
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_44
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_43
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_4
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_39
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_38
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_6
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_34
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_33
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_8
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_29
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_28
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_10
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_24
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_23
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_12
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_14
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT6
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6__paramete...
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv__parameter...
+Compiling module xil_defaultlib.div_8bit_addsubreg_v__parameteri...
+Compiling module xil_defaultlib.div_8bit_dividervdc_v
+Compiling module xil_defaultlib.div_8bit_c_twos_comp_viv
+Compiling module xil_defaultlib.div_8bit_cmp2s_v
+Compiling module xil_defaultlib.div_8bit_c_twos_comp_viv__parame...
+Compiling module xil_defaultlib.div_8bit_cmp2s_v__parameterized0
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_twos_comp_viv__parame...
+Compiling module xil_defaultlib.div_8bit_cmp2s_v__parameterized1
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_twos_comp_viv__parame...
+Compiling module xil_defaultlib.div_8bit_cmp2s_v__parameterized1...
+Compiling module xil_defaultlib.div_8bit_bip_sdivider_synth
+Compiling module xil_defaultlib.div_8bit_div_gen_synth
+Compiling module xil_defaultlib.div_8bit_div_gen_v5_1_12_viv
+Compiling module xil_defaultlib.div_8bit_div_gen_v5_1_12
+Compiling module xil_defaultlib.div_8bit
+Compiling architecture behavioral of entity xil_defaultlib.uyg113
+Built simulation snapshot uyg113_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:39 . Memory (MB): peak = 863.492 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '39' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg113_behav -key {Behavioral:sim_1:Functional:uyg113} -tclbatch {uyg113.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg113.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 863.492 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg113_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:01:01 . Memory (MB): peak = 863.492 ; gain = 0.000
+add_force {/uyg113/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg113/op} -radix hex {0 0ns}
+add_force {/uyg113/s1} -radix hex {12 0ns}
+add_force {/uyg113/s2} -radix hex {d6 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 500 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+export_ip_user_files -of_objects  [get_files {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_8bit/mult_8bit.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset mult_8bit {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_8bit/mult_8bit.xci}}
+INFO: [Project 1-386] Moving file 'e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_8bit/mult_8bit.xci' from fileset 'mult_8bit' to fileset 'sources_1'.
+remove_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 863.492 ; gain = 0.000
+file delete -force {e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/mult_8bit}
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg113' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj uyg113_vlog.prj"
+"xvhdl --incr --relax -prj uyg113_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new/uyg113.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg113
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 863.492 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '12' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto bf2f2967b60949c498bec52e30937043 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot uyg113_behav xil_defaultlib.uyg113 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.VCC
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.SRL16E_default
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_54
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_53
+Compiling module xil_defaultlib.div_8bit_addsubreg_v
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_49
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_48
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_2
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_44
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_43
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_4
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_39
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_38
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_6
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_34
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_33
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_8
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_29
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_28
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_10
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6_24
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv_23
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_12
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv
+Compiling module xil_defaultlib.div_8bit_addsubreg_v_14
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT6
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_addsub_lut6__paramete...
+Compiling module xil_defaultlib.div_8bit_c_addsub_viv__parameter...
+Compiling module xil_defaultlib.div_8bit_addsubreg_v__parameteri...
+Compiling module xil_defaultlib.div_8bit_dividervdc_v
+Compiling module xil_defaultlib.div_8bit_c_twos_comp_viv
+Compiling module xil_defaultlib.div_8bit_cmp2s_v
+Compiling module xil_defaultlib.div_8bit_c_twos_comp_viv__parame...
+Compiling module xil_defaultlib.div_8bit_cmp2s_v__parameterized0
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_twos_comp_viv__parame...
+Compiling module xil_defaultlib.div_8bit_cmp2s_v__parameterized1
+Compiling module xil_defaultlib.div_8bit_xbip_pipe_v3_0_4_viv__p...
+Compiling module xil_defaultlib.div_8bit_c_twos_comp_viv__parame...
+Compiling module xil_defaultlib.div_8bit_cmp2s_v__parameterized1...
+Compiling module xil_defaultlib.div_8bit_bip_sdivider_synth
+Compiling module xil_defaultlib.div_8bit_div_gen_synth
+Compiling module xil_defaultlib.div_8bit_div_gen_v5_1_12_viv
+Compiling module xil_defaultlib.div_8bit_div_gen_v5_1_12
+Compiling module xil_defaultlib.div_8bit
+Compiling architecture behavioral of entity xil_defaultlib.uyg113
+Built simulation snapshot uyg113_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 863.492 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '20' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg113_behav -key {Behavioral:sim_1:Functional:uyg113} -tclbatch {uyg113.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg113.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 863.492 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg113_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:39 . Memory (MB): peak = 863.492 ; gain = 0.000
+add_force {/uyg113/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg113/rst} -radix hex {0 0ns}
+add_force {/uyg113/s1} -radix hex {12 0ns}
+add_force {/uyg113/s2} -radix hex {d5 0ns}
+run 500 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: uyg113
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:40 ; elapsed = 00:00:36 . Memory (MB): peak = 961.121 ; gain = 89.934
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'uyg113' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new/uyg113.vhd:19]
+INFO: [Synth 8-3491] module 'div_8bit' declared at 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg1/.Xil/Vivado-1740-dell-Bilgisayar/realtime/div_8bit_stub.vhdl:5' bound to instance 'BOLME' of component 'div_8bit' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new/uyg113.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'div_8bit' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg1/.Xil/Vivado-1740-dell-Bilgisayar/realtime/div_8bit_stub.vhdl:18]
+INFO: [Synth 8-4471] merging register 'dividend_tvalid_reg' into 'divisor_tvalid_reg' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new/uyg113.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element dividend_tvalid_reg was removed.  [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new/uyg113.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'uyg113' (1#1) [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new/uyg113.vhd:19]
+WARNING: [Synth 8-3331] design uyg113 has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:43 ; elapsed = 00:00:41 . Memory (MB): peak = 988.387 ; gain = 117.199
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 988.387 ; gain = 117.199
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit.dcp' for cell 'BOLME'
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:02:09 ; elapsed = 00:01:52 . Memory (MB): peak = 1488.848 ; gain = 617.660
+14 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:11 ; elapsed = 00:01:54 . Memory (MB): peak = 1488.848 ; gain = 620.898
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1491.355 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'uyg113' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new/uyg113.vhd:19]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new/uyg113.vhd:38]
+INFO: [Synth 8-3491] module 'div_8bit' declared at 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg1/.Xil/Vivado-1740-dell-Bilgisayar/realtime/div_8bit_stub.vhdl:5' bound to instance 'BOLME' of component 'div_8bit' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new/uyg113.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'div_8bit' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg1/.Xil/Vivado-1740-dell-Bilgisayar/realtime/div_8bit_stub.vhdl:18]
+INFO: [Synth 8-256] done synthesizing module 'uyg113' (1#1) [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/new/uyg113.vhd:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:43 ; elapsed = 00:00:41 . Memory (MB): peak = 1508.160 ; gain = 16.805
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:42 . Memory (MB): peak = 1508.160 ; gain = 16.805
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.srcs/sources_1/ip/div_8bit/div_8bit.dcp' for cell 'BOLME'
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:11 . Memory (MB): peak = 1595.359 ; gain = 104.004
+close_project
+create_project prj_bolum11_uyg5 {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5} -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1595.359 ; gain = 0.000
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/new
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/new
+file mkdir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/new}
+close [ open {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/new/uyg115.vhd} w ]
+add_files {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/new/uyg115.vhd}}
+update_compile_order -fileset sources_1
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name fp_convert_to_float -dir {e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/ip}
+create_ip: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1595.359 ; gain = 0.000
+set_property -dict [list CONFIG.Component_Name {fp_convert_to_float} CONFIG.Operation_Type {Fixed_to_float} CONFIG.A_Precision_Type {Int32} CONFIG.C_A_Exponent_Width {32} CONFIG.C_A_Fraction_Width {0} CONFIG.Result_Precision_Type {Single} CONFIG.C_Result_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {24} CONFIG.C_Accum_Msb {32} CONFIG.C_Accum_Lsb {-31} CONFIG.C_Accum_Input_Msb {32} CONFIG.C_Mult_Usage {No_Usage} CONFIG.C_Latency {7} CONFIG.C_Rate {1}] [get_ips fp_convert_to_float]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'fp_convert_to_float' to 'fp_convert_to_float' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files {{e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/ip/fp_convert_to_float/fp_convert_to_float.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fp_convert_to_float'...
+update_compile_order -fileset sources_1
+import_files -norecurse {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1/prj_bolum10_uyg1.srcs/sources_1/new/blokRAM.vhd}}
+update_compile_order -fileset sources_1
+import_files -norecurse {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg3/prj_bolum10_uyg3.srcs/sources_1/new/RandomSayi.vhd}}
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 18 19:04:43 2019...

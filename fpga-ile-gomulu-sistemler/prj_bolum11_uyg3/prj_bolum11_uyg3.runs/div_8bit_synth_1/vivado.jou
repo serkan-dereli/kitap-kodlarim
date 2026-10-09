@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Aug 16 23:26:54 2019
+# Process ID: 8340
+# Current directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/div_8bit_synth_1
+# Command line: vivado.exe -log div_8bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source div_8bit.tcl
+# Log file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/div_8bit_synth_1/div_8bit.vds
+# Journal file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/div_8bit_synth_1\vivado.jou
+#-----------------------------------------------------------
+source div_8bit.tcl -notrace

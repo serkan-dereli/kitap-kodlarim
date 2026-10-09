@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../prj_bolum9_uyg1.srcs/sources_1/new/uyg901.vhd" \
+
+# Do not sort compile order
+nosort

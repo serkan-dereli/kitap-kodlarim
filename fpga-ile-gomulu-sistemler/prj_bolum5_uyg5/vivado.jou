@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jul  9 11:04:57 2019
+# Process ID: 2244
+# Current directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent952 E:\bildiri ve makaleler\kitap\fpga\uygulamalar\prj_bolum5_uyg5\prj_bolum5_uyg5.xpr
+# Log file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/vivado.log
+# Journal file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source uyg55.tcl
+add_force {/uyg55/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg55/rst} -radix hex {0 0ns}
+add_force {/uyg55/sayi} -radix hex {a2863cd1 0ns}
+run 100 ns
+add_force {/uyg55/rst} -radix hex {1 0ns}
+run 100 ns
+add_force {/uyg55/sayi} -radix hex {19ce3647 0ns}
+add_force {/uyg55/rst} -radix hex {0 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg55.tcl
+add_force {/uyg55/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg55/rst} -radix hex {0 0ns}
+add_force {/uyg55/sayi} -radix hex {6a7c182e 0ns}
+run 100 ns
+add_force {/uyg55/rst} -radix hex {1 0ns}
+run 100 ns
+add_force {/uyg55/rst} -radix hex {0 0ns}
+add_force {/uyg55/sayi} -radix hex {16de880c 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg55.tcl
+add_force {/uyg55/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg55/rst} -radix hex {0 0ns}
+add_force {/uyg55/sayi} -radix hex {19038ab2e 0ns}
+add_force {/uyg55/sayi} -radix hex {19038ab2 0ns}
+run 100 ns
+add_force {/uyg55/rst} -radix hex {1 0ns}
+run 100 ns
+add_force {/uyg55/rst} -radix hex {0 0ns}
+add_force {/uyg55/sayi} -radix hex {cc26bb81 0ns}
+run 100 ns
+close_sim
+synth_design -rtl -name rtl_1

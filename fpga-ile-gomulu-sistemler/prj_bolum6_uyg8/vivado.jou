@@ -1,0 +1,214 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Jul 28 20:36:34 2019
+# Process ID: 5308
+# Current directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum6_uyg8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4292 E:\bildiri ve makaleler\kitap\fpga\uygulamalar\prj_bolum6_uyg8\prj_bolum6_uyg8.xpr
+# Log file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum6_uyg8/vivado.log
+# Journal file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum6_uyg8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum6_uyg8/prj_bolum6_uyg8.xpr}
+update_compile_order -fileset sources_1
+close_project
+create_project prj_bolum7_uyg1 {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg1} -part xc7a100tcsg324-1
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg1/prj_bolum7_uyg1.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg1/prj_bolum7_uyg1.srcs/sources_1/new
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg1/prj_bolum7_uyg1.srcs/sources_1/new
+file mkdir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg1/prj_bolum7_uyg1.srcs/sources_1/new}
+close [ open {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg1/prj_bolum7_uyg1.srcs/sources_1/new/uyg71.vhd} w ]
+add_files {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg1/prj_bolum7_uyg1.srcs/sources_1/new/uyg71.vhd}}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source uyg71.tcl
+add_force {/uyg71/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg71/rst} -radix hex {0 0ns}
+add_force {/uyg71/motor} -radix hex {1 0ns}
+add_force {/uyg71/kapi} -radix hex {1 0ns}
+add_force {/uyg71/emniyet} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg71/kapi} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg71/kapi} -radix hex {1 0ns}
+add_force {/uyg71/emniyet} -radix hex {0 0ns}
+add_force {/uyg71/motor} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg71.tcl
+add_force {/uyg71/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg71/rst} -radix hex {0 0ns}
+add_force {/uyg71/motor} -radix hex {1 0ns}
+add_force {/uyg71/kapi} -radix hex {1 0ns}
+add_force {/uyg71/emniyet} -radix hex {1 0ns}
+run 100 ns
+add_force {/uyg71/kapi} -radix hex {0 0ns}
+run 100 ns
+add_force {/uyg71/motor} -radix hex {0 0ns}
+run 100 ns
+add_force {/uyg71/motor} -radix hex {1 0ns}
+add_force {/uyg71/kapi} -radix hex {1 0ns}
+add_force {/uyg71/emniyet} -radix hex {0 0ns}
+run 100 ns
+close_sim
+synth_design -rtl -name rtl_1
+update_compile_order -fileset sources_1
+close_project
+open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg1/prj_bolum7_uyg1.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+launch_simulation
+source uyg71.tcl
+add_force {/uyg71/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg71/rst} -radix hex {0 0ns}
+add_force {/uyg71/motor} -radix hex {1 0ns}
+add_force {/uyg71/kapi} -radix hex {1 0ns}
+add_force {/uyg71/emniyet} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg71.tcl
+add_force {/uyg71/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg71/rst} -radix hex {0 0ns}
+add_force {/uyg71/motor} -radix hex {1 0ns}
+add_force {/uyg71/kapi} -radix hex {1 0ns}
+add_force {/uyg71/emniyet} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg71/kapi} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg71/kapi} -radix hex {0 0ns}
+add_force {/uyg71/kapi} -radix hex {1 0ns}
+add_force {/uyg71/emniyet} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg71/emniyet} -radix hex {1 0ns}
+run 100 ns
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source uyg71.tcl
+add_force {/uyg71/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg71/rst} -radix hex {0 0ns}
+add_force {/uyg71/motor} -radix hex {1 0ns}
+add_force {/uyg71/kapi} -radix hex {1 0ns}
+add_force {/uyg71/emniyet} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg71.tcl
+add_force {/uyg71/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg71/rst} -radix hex {0 0ns}
+add_force {/uyg71/motor} -radix hex {1 0ns}
+add_force {/uyg71/kapi} -radix hex {1 0ns}
+add_force {/uyg71/emniyet} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/uyg71/kapi} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/uyg71/kapi} -radix hex {1 0ns}
+add_force {/uyg71/emniyet} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/uyg71/motor} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+refresh_design
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source uyg71.tcl
+add_force {/uyg71/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg71/rst} -radix hex {0 0ns}
+add_force {/uyg71/motor} -radix hex {1 0ns}
+add_force {/uyg71/kapi} -radix hex {1 0ns}
+add_force {/uyg71/emniyet} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg71/kapi} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg71/kapi} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg71/emniyet} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg71/emniyet} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg71/motor} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+close_sim
+refresh_design
+close_project
+create_project prj_bolum7_uyg3 {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg3} -part xc7a100tcsg324-1
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg3/prj_bolum7_uyg3.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg3/prj_bolum7_uyg3.srcs/sources_1/new
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg3/prj_bolum7_uyg3.srcs/sources_1/new
+file mkdir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg3/prj_bolum7_uyg3.srcs/sources_1/new}
+close [ open {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg3/prj_bolum7_uyg3.srcs/sources_1/new/uyg73.vhd} w ]
+add_files {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg3/prj_bolum7_uyg3.srcs/sources_1/new/uyg73.vhd}}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source uyg73.tcl
+add_force {/uyg73/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg73/rst} -radix hex {0 0ns}
+add_force {/uyg73/sec} -radix bin {10 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg73.tcl
+add_force {/uyg73/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg73/rst} -radix hex {0 0ns}
+add_force {/uyg73/sec} -radix bin {10 0ns}
+run 100 ns
+add_force {/uyg73/sec} -radix hex {0 0ns}
+run 100 ns
+add_force {/uyg73/sec} -radix hex {1 0ns}
+run 100 ns
+add_force {/uyg73/sec} -radix hex {0 0ns}
+run 100 ns
+add_force {/uyg73/rst} -radix hex {1 0ns}
+run 100 ns
+add_force {/uyg73/sec} -radix bin {11 0ns}
+add_force {/uyg73/rst} -radix hex {0 0ns}
+run 100 ns
+close_sim
+synth_design -rtl -name rtl_1
+close_project
+create_project prj_bolum7_uyg5 {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg5} -part xc7a100tcsg324-1
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg5/prj_bolum7_uyg5.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg5/prj_bolum7_uyg5.srcs/sources_1/new
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg5/prj_bolum7_uyg5.srcs/sources_1/new
+file mkdir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg5/prj_bolum7_uyg5.srcs/sources_1/new}
+close [ open {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg5/prj_bolum7_uyg5.srcs/sources_1/new/uyg75.vhd} w ]
+add_files {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum7_uyg5/prj_bolum7_uyg5.srcs/sources_1/new/uyg75.vhd}}
+update_compile_order -fileset sources_1
+launch_simulation

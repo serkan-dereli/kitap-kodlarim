@@ -1,0 +1,454 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 476
+License: Customer
+
+Current time: 	Mon Jul 08 01:12:35 GMT+02:00 2019
+Time zone: 	GMT+02:00 (GMT+02:00)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 112 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	dell
+User home directory: C:/Users/dell
+User working directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5
+User country: 	TR
+User language: 	tr
+User locale: 	tr_TR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/dell/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/dell/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/dell/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/vivado.log
+Vivado journal file location: 	E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/vivado.jou
+Engine tmp dir: 	E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/.Xil/Vivado-476-dell-Bilgisayar
+
+GUI allocated memory:	167 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 490 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 37 MB (+36539kb) [00:00:13]
+// [Engine Memory]: 423 MB (+292526kb) [00:00:13]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: E:\bildiri ve makaleler\kitap\fpga\uygulamalar\prj_bolum5_uyg5\prj_bolum5_uyg5.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// [GUI Memory]: 53 MB (+14604kb) [00:00:31]
+// [Engine Memory]: 489 MB (+46750kb) [00:00:31]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 495 MB. GUI used memory: 34 MB. Current time: 7/8/19 1:12:38 AM GMT+02:00
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 514 MB (+125kb) [00:00:45]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 533 MB. GUI used memory: 37 MB. Current time: 7/8/19 1:12:58 AM GMT+02:00
+// Tcl Message: open_project: Time (s): cpu = 00:00:42 ; elapsed = 00:00:21 . Memory (MB): peak = 713.059 ; gain = 16.172 
+// Project name: prj_bolum5_uyg5; location: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5; part: xc7a100tcsg324-1
+// [GUI Memory]: 58 MB (+2489kb) [00:00:56]
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 541 MB (+1760kb) [00:00:59]
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 566 MB. GUI used memory: 36 MB. Current time: 7/8/19 1:13:13 AM GMT+02:00
+// PAPropertyPanels.initPanels (uyg55.vhd) elapsed time: 0.8s
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uyg55(Behavioral) (uyg55.vhd)]", 1, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uyg55(Behavioral) (uyg55.vhd)]", 1, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uyg55(Behavioral) (uyg55.vhd)]", 1, false, false, false, false, false, true); // B (D, cj) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+// [GUI Memory]: 62 MB (+601kb) [00:03:53]
+// [GUI Memory]: 66 MB (+880kb) [00:04:23]
+// Elapsed time: 233 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cj):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.sim/sim_1/behav/xsim' 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'uyg55' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj uyg55_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '5' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.sim/sim_1/behav/xsim' 
+// Tcl Message: Vivado Simulator 2017.4 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto ab3a3086e46649698794b11c8966e34c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uyg55_behav xil_defaultlib.uyg55 -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 745.207 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "uyg55_behav -key {Behavioral:sim_1:Functional:uyg55} -tclbatch {uyg55.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// PAPropertyPanels.initPanels (uyg55.vhd) elapsed time: 0.4s
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source uyg55.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 567 MB. GUI used memory: 44 MB. Current time: 7/8/19 1:17:45 AM GMT+02:00
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: xsim: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 745.207 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg55_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 745.207 ; gain = 0.000 
+// 'd' command handler elapsed time: 25 seconds
+// Elapsed time: 25 seconds
+dismissDialog("Run Simulation"); // e (cj)
+// [GUI Memory]: 74 MB (+5060kb) [00:05:43]
+// [Engine Memory]: 574 MB (+5492kb) [00:05:43]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 578 MB. GUI used memory: 45 MB. Current time: 7/8/19 1:17:54 AM GMT+02:00
+unMinimizeFrame(PAResourceOtoP.PAViews_OBJECTS, "Objects"); // ax
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "clk ; U ; Logic", 0, "clk", 0, false, false, false, false, true, false); // n (c, cj) - Popup Trigger
+selectMenuItem((HResource) null, "Force Clock..."); // ac (ai, cj)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a (cj): Force Clock:  /uyg55/clk: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_LEADING_EDGE_VALUE, "0"); // X (N, a)
+setText(PAResourceQtoS.SimulationForceSettingsDialog_TRAILING_EDGE_VALUE, "1"); // X (N, a)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// Tcl Message: add_force {/uyg55/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps 
+dismissDialog("Force Clock:  /uyg55/clk"); // a (cj)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "rst ; U ; Logic", 1, "rst", 0, false, false, false, false, true, false); // n (c, cj) - Popup Trigger
+// [Engine Memory]: 604 MB (+1955kb) [00:05:59]
+selectMenuItem((HResource) null, "Force Constant..."); // ac (ai, cj)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a (cj): Force Constant:  /uyg55/rst: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "0"); // X (N, a)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// [GUI Memory]: 77 MB (+47kb) [00:06:02]
+// Tcl Message: add_force {/uyg55/rst} -radix hex {0 0ns} 
+dismissDialog("Force Constant:  /uyg55/rst"); // a (cj)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "sec[1:0] ; U ; Array", 2, "sec[1:0]", 0, true, false, false, false, true, false); // n (c, cj) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // Z (ai, cj)
+selectMenuItem((HResource) null, "Force Constant..."); // ac (ai, cj)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a (cj): Force Constant:  /uyg55/sec: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "1"); // X (N, a)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// Tcl Message: add_force {/uyg55/sec} -radix hex {1 0ns} 
+dismissDialog("Force Constant:  /uyg55/sec"); // a (cj)
+// [GUI Memory]: 82 MB (+333kb) [00:06:08]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "sayi1[3:0] ; U ; Array", 3, "sayi1[3:0]", 0, true, false, false, false, true, false); // n (c, cj) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // Z (ai, cj)
+selectMenuItem((HResource) null, "Force Constant..."); // ac (ai, cj)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a (cj): Force Constant:  /uyg55/sayi1: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "c"); // X (N, a)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: add_force {/uyg55/sayi1} -radix hex {c 0ns} 
+dismissDialog("Force Constant:  /uyg55/sayi1"); // a (cj)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "sayi2[3:0] ; U ; Array", 4, "sayi2[3:0]", 0, true, false, false, false, true, false); // n (c, cj) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // Z (ai, cj)
+selectMenuItem((HResource) null, "Force Constant..."); // ac (ai, cj)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a (cj): Force Constant:  /uyg55/sayi2: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "6"); // X (N, a)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 87 MB (+862kb) [00:06:26]
+// Tcl Message: add_force {/uyg55/sayi2} -radix hex {6 0ns} 
+dismissDialog("Force Constant:  /uyg55/sayi2"); // a (cj)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 609 MB. GUI used memory: 45 MB. Current time: 7/8/19 1:18:35 AM GMT+02:00
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 100 ns 
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 609 MB. GUI used memory: 46 MB. Current time: 7/8/19 1:18:41 AM GMT+02:00
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, sonuc[7:0]]", 5, true, false, false, false, true, false); // a (s, cj) - Popup Trigger - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Name"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Radix"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenuItem((HResource) null, "Signed Decimal"); // Q (cj, Popup.HeavyWeightWindow)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, sayi1[3:0]]", 3, true, false, false, false, true, false); // a (s, cj) - Popup Trigger - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 609 MB. GUI used memory: 46 MB. Current time: 7/8/19 1:18:53 AM GMT+02:00
+selectMenu((HResource) null, "Name"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Waveform Style"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Signal Color"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Radix"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenuItem((HResource) null, "Signed Decimal"); // Q (cj, Popup.HeavyWeightWindow)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, sayi2[3:0]]", 4, true, false, false, false, true, false); // a (s, cj) - Popup Trigger - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Name"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Waveform Style"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Signal Color"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Radix"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenuItem((HResource) null, "Signed Decimal"); // Q (cj, Popup.HeavyWeightWindow)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "sec[1:0] ; 1 ; Array", 2, "sec[1:0]", 0, true, false, false, false, true, false); // n (c, cj) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // Z (ai, cj)
+selectMenuItem((HResource) null, "Force Constant..."); // ac (ai, cj)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a (cj): Force Constant:  /uyg55/sec: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "2"); // X (N, a)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// Tcl Message: add_force {/uyg55/sec} -radix hex {2 0ns} 
+dismissDialog("Force Constant:  /uyg55/sec"); // a (cj)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 609 MB. GUI used memory: 46 MB. Current time: 7/8/19 1:19:19 AM GMT+02:00
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 100 ns 
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "sec[1:0] ; 2 ; Array", 2, "2", 1, true, false, false, false, true, false); // n (c, cj) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // Z (ai, cj)
+selectMenuItem((HResource) null, "Force Constant..."); // ac (ai, cj)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a (cj): Force Constant:  /uyg55/sec: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "3"); // X (N, a)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// Tcl Message: add_force {/uyg55/sec} -radix hex {3 0ns} 
+dismissDialog("Force Constant:  /uyg55/sec"); // a (cj)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 92 MB (+858kb) [00:07:31]
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 100 ns 
+// Elapsed time: 15 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, sec[1:0]]", 2, true); // a (s, cj) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 289 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, sayi1[3:0]]", 3, true, false, false, false, true, false); // a (s, cj) - Popup Trigger - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 609 MB. GUI used memory: 82 MB. Current time: 7/8/19 1:24:42 AM GMT+02:00
+selectMenu((HResource) null, "Name"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Waveform Style"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Signal Color"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Radix"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenu((HResource) null, "Radix"); // Z (ai, Popup.HeavyWeightWindow)
+// [GUI Memory]: 97 MB (+389kb) [00:-42:00]
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 615 MB. GUI used memory: 46 MB. Current time: 7/8/19 9:00:50 AM GMT+02:00
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 615 MB. GUI used memory: 44 MB. Current time: 7/8/19 9:31:02 AM GMT+02:00
+// HMemoryUtils.trashcanNow. Engine heap size: 615 MB. GUI used memory: 44 MB. Current time: 7/8/19 10:01:04 AM GMT+02:00
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 615 MB. GUI used memory: 44 MB. Current time: 7/8/19 10:31:07 AM GMT+02:00
+// HMemoryUtils.trashcanNow. Engine heap size: 615 MB. GUI used memory: 45 MB. Current time: 7/8/19 11:01:07 AM GMT+02:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 615 MB. GUI used memory: 45 MB. Current time: 7/8/19 11:31:08 AM GMT+02:00
+// HMemoryUtils.trashcanNow. Engine heap size: 615 MB. GUI used memory: 43 MB. Current time: 7/8/19 12:01:08 PM GMT+02:00
+// Elapsed time: 38705 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (O, cj)
+// x (cj): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// bs (cj):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // x (cj)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: uyg55 
+// HMemoryUtils.trashcanNow. Engine heap size: 645 MB. GUI used memory: 43 MB. Current time: 7/8/19 12:10:15 PM GMT+02:00
+// [Engine Memory]: 650 MB (+16543kb) [10:58:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 693 MB. GUI used memory: 44 MB. Current time: 7/8/19 12:10:29 PM GMT+02:00
+// [Engine Memory]: 694 MB (+11588kb) [10:58:27]
+// [Engine Memory]: 738 MB (+10491kb) [10:58:32]
+// [Engine Memory]: 841 MB (+68308kb) [10:58:42]
+// HMemoryUtils.trashcanNow. Engine heap size: 841 MB. GUI used memory: 43 MB. Current time: 7/8/19 12:10:49 PM GMT+02:00
+// TclEventType: ELABORATE_FINISH
+// HMemoryUtils.trashcanNow. Engine heap size: 883 MB. GUI used memory: 43 MB. Current time: 7/8/19 12:11:09 PM GMT+02:00
+// [Engine Memory]: 883 MB (+332kb) [10:59:07]
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,007 MB. GUI used memory: 44 MB. Current time: 7/8/19 12:11:26 PM GMT+02:00
+// [Engine Memory]: 1,008 MB (+85261kb) [10:59:22]
+// [Engine Memory]: 1,119 MB (+63572kb) [10:59:24]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2017.4/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 3.5s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 3.7s
+// [GUI Memory]: 110 MB (+9381kb) [10:59:33]
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:35 ; elapsed = 00:00:33 . Memory (MB): peak = 865.879 ; gain = 83.230 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'uyg55' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.srcs/sources_1/new/uyg55.vhd:20] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'uyg55' (1#1) [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.srcs/sources_1/new/uyg55.vhd:20] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:39 ; elapsed = 00:00:38 . Memory (MB): peak = 907.781 ; gain = 125.133 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 907.781 ; gain = 125.133 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// HMemoryUtils.trashcanNow. Engine heap size: 1,145 MB. GUI used memory: 79 MB. Current time: 7/8/19 12:11:41 PM GMT+02:00
+// OpenDesignTask elapsed time: 102.9s
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:01:56 ; elapsed = 00:01:41 . Memory (MB): peak = 1279.336 ; gain = 496.688 
+// Tcl Message: 6 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:01:57 ; elapsed = 00:01:42 . Memory (MB): peak = 1279.336 ; gain = 496.688 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 103 seconds
+dismissDialog("Open Elaborated Design"); // bs (cj)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G (Q, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,154 MB. GUI used memory: 70 MB. Current time: 7/8/19 12:41:46 PM GMT+02:00
+// Elapsed time: 2836 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uyg55.vhd", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cj)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 2); // k (j, cj)
+// PAPropertyPanels.initPanels (<const1>) elapsed time: 0.8s
+// [GUI Memory]: 117 MB (+1151kb) [11:48:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 71 MB. Current time: 7/8/19 1:11:46 PM GMT+02:00
+// Elapsed time: 810 seconds
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // ac (cj, Popup.HeavyWeightWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// x (cj): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (x)
+// 'b' command handler elapsed time: 3 seconds
+dismissDialog("Close Project"); // x (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,166 MB. GUI used memory: 71 MB. Current time: 7/8/19 1:32:52 PM GMT+02:00
+// [GUI Memory]: 124 MB (+900kb) [12:34:21]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,166 MB. GUI used memory: 71 MB. Current time: 7/8/19 2:02:53 PM GMT+02:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,166 MB. GUI used memory: 71 MB. Current time: 7/8/19 2:32:53 PM GMT+02:00

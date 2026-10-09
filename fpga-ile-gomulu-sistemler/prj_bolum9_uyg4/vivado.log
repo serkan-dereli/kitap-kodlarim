@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Aug 10 11:18:28 2019
+# Process ID: 1124
+# Current directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7132 E:\bildiri ve makaleler\kitap\fpga\uygulamalar\prj_bolum9_uyg4\prj_bolum9_uyg4.xpr
+# Log file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg4/vivado.log
+# Journal file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg4/prj_bolum9_uyg4.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:48 ; elapsed = 00:00:19 . Memory (MB): peak = 738.199 ; gain = 4.051
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: uyg904
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:00:38 . Memory (MB): peak = 847.594 ; gain = 81.684
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'uyg904' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg4/prj_bolum9_uyg4.srcs/sources_1/new/uyg904.vhd:27]
+	Parameter bits bound to: 8 - type: integer 
+	Parameter adr_bits bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uyg904' (1#1) [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg4/prj_bolum9_uyg4.srcs/sources_1/new/uyg904.vhd:27]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:52 ; elapsed = 00:00:44 . Memory (MB): peak = 899.512 ; gain = 133.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:52 ; elapsed = 00:00:46 . Memory (MB): peak = 899.512 ; gain = 133.602
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:02:26 ; elapsed = 00:01:58 . Memory (MB): peak = 1263.414 ; gain = 497.504
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:27 ; elapsed = 00:01:58 . Memory (MB): peak = 1263.414 ; gain = 497.504

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="Floating_KUCUK_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1566208234">
+  <File Type="PA-TCL" Name="Floating_KUCUK.tcl"/>
+  <File Type="REPORTS-TCL" Name="Floating_KUCUK_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Floating_KUCUK.vds"/>
+  <File Type="RDS-UTIL" Name="Floating_KUCUK_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Floating_KUCUK_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Floating_KUCUK.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Floating_KUCUK">
+    <File Path="$PSRCDIR/sources_1/ip/Floating_KUCUK/Floating_KUCUK.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="Floating_KUCUK"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Floating_KUCUK">
+    <File Path="$PSRCDIR/sources_1/ip/Floating_KUCUK/Floating_KUCUK.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="Floating_KUCUK"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

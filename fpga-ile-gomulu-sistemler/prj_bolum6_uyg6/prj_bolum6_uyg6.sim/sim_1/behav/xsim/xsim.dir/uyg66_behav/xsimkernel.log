@@ -1,0 +1,7 @@
+Running: xsim.dir/uyg66_behav/xsimk.exe -simmode gui -wdb uyg66_behav.wdb -simrunnum 0 -socket 49821
+Design successfully loaded
+Design Loading Memory Usage: 7840 KB (Peak: 7840 KB)
+Design Loading CPU Usage: 93 ms
+Simulation completed
+Simulation Memory Usage: 8504 KB (Peak: 8504 KB)
+Simulation CPU Usage: 217 ms

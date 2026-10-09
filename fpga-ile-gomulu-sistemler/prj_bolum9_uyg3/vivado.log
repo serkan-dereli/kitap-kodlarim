@@ -1,0 +1,836 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Aug 10 17:30:17 2019
+# Process ID: 6644
+# Current directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7260 E:\bildiri ve makaleler\kitap\fpga\uygulamalar\prj_bolum9_uyg3\prj_bolum9_uyg3.xpr
+# Log file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg3/vivado.log
+# Journal file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg3/prj_bolum9_uyg3.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:47 ; elapsed = 00:00:21 . Memory (MB): peak = 717.426 ; gain = 7.949
+update_compile_order -fileset sources_1
+close_project
+create_project prj_bolum10_uyg1_ {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_} -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+create_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:22 . Memory (MB): peak = 788.367 ; gain = 1.543
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new
+file mkdir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new}
+close [ open {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd} w ]
+add_files {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd}}
+update_compile_order -fileset sources_1
+import_files -norecurse {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1/prj_bolum10_uyg1.srcs/sources_1/new/blokRAM.vhd} {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1/prj_bolum10_uyg1.srcs/sources_1/new/dosyadanOKU.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg101' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj uyg101_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/imports/new/blokRAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity blokRAM
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/imports/new/dosyadanOKU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dosyadanOKU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg101
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 788.367 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f3fa9c0e7c80440a879630343b9d9a80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uyg101_behav xil_defaultlib.uyg101 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-665] expression has 17 elements ; formal gir expects 8 [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd:79]
+ERROR: [VRFC 10-665] expression has 17 elements ; formal cik expects 8 [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd:80]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit uyg101 in library work failed.
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 788.367 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 788.367 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg101' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj uyg101_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg101
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 788.367 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f3fa9c0e7c80440a879630343b9d9a80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uyg101_behav xil_defaultlib.uyg101 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.blokRAM [blokram_default]
+Compiling architecture behavioral of entity xil_defaultlib.dosyadanOKU [dosyadanoku_default]
+Compiling architecture behavioral of entity xil_defaultlib.uyg101
+Built simulation snapshot uyg101_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/bildiri -notrace
+couldn't read file "E:/bildiri": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Aug 12 07:10:06 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 788.367 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '16' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg101_behav -key {Behavioral:sim_1:Functional:uyg101} -tclbatch {uyg101.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg101.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 794.422 ; gain = 6.055
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg101_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 794.422 ; gain = 6.055
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 810.609 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg101' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj uyg101_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/imports/new/dosyadanOKU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dosyadanOKU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg101
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 810.609 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f3fa9c0e7c80440a879630343b9d9a80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uyg101_behav xil_defaultlib.uyg101 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-716] formal port son of mode out cannot be associated with actual port son of mode in [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd:42]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit uyg101 in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 810.609 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg101' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj uyg101_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg101
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 810.609 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f3fa9c0e7c80440a879630343b9d9a80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uyg101_behav xil_defaultlib.uyg101 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.blokRAM [blokram_default]
+Compiling architecture behavioral of entity xil_defaultlib.dosyadanOKU [dosyadanoku_default]
+Compiling architecture behavioral of entity xil_defaultlib.uyg101
+Built simulation snapshot uyg101_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 810.609 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg101_behav -key {Behavioral:sim_1:Functional:uyg101} -tclbatch {uyg101.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg101.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 810.609 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg101_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 810.609 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg101' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj uyg101_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg101
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 810.609 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f3fa9c0e7c80440a879630343b9d9a80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uyg101_behav xil_defaultlib.uyg101 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.blokRAM [blokram_default]
+Compiling architecture behavioral of entity xil_defaultlib.dosyadanOKU [dosyadanoku_default]
+Compiling architecture behavioral of entity xil_defaultlib.uyg101
+Built simulation snapshot uyg101_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 810.609 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg101_behav -key {Behavioral:sim_1:Functional:uyg101} -tclbatch {uyg101.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg101.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 810.609 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg101_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 810.609 ; gain = 0.000
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg101' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj uyg101_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg101
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f3fa9c0e7c80440a879630343b9d9a80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uyg101_behav xil_defaultlib.uyg101 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.blokRAM [blokram_default]
+Compiling architecture behavioral of entity xil_defaultlib.dosyadanOKU [dosyadanoku_default]
+Compiling architecture behavioral of entity xil_defaultlib.uyg101
+Built simulation snapshot uyg101_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 810.609 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg101_behav -key {Behavioral:sim_1:Functional:uyg101} -tclbatch {uyg101.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg101.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 810.609 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg101_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 810.609 ; gain = 0.000
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg101' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj uyg101_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg101
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f3fa9c0e7c80440a879630343b9d9a80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uyg101_behav xil_defaultlib.uyg101 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.blokRAM [blokram_default]
+Compiling architecture behavioral of entity xil_defaultlib.dosyadanOKU [dosyadanoku_default]
+Compiling architecture behavioral of entity xil_defaultlib.uyg101
+Built simulation snapshot uyg101_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 819.313 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg101_behav -key {Behavioral:sim_1:Functional:uyg101} -tclbatch {uyg101.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg101.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 819.313 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg101_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 819.313 ; gain = 0.000
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg101' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj uyg101_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg101
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f3fa9c0e7c80440a879630343b9d9a80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uyg101_behav xil_defaultlib.uyg101 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.blokRAM [blokram_default]
+Compiling architecture behavioral of entity xil_defaultlib.dosyadanOKU [dosyadanoku_default]
+Compiling architecture behavioral of entity xil_defaultlib.uyg101
+Built simulation snapshot uyg101_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 819.313 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg101_behav -key {Behavioral:sim_1:Functional:uyg101} -tclbatch {uyg101.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg101.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg101_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 819.313 ; gain = 0.000
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg101' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj uyg101_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/imports/new/blokRAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity blokRAM
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f3fa9c0e7c80440a879630343b9d9a80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uyg101_behav xil_defaultlib.uyg101 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.blokRAM [blokram_default]
+Compiling architecture behavioral of entity xil_defaultlib.dosyadanOKU [dosyadanoku_default]
+Compiling architecture behavioral of entity xil_defaultlib.uyg101
+Built simulation snapshot uyg101_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 819.313 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg101_behav -key {Behavioral:sim_1:Functional:uyg101} -tclbatch {uyg101.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg101.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 819.313 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg101_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 819.313 ; gain = 0.000
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 500 ns
+run 500 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg101' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj uyg101_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg101
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 824.902 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f3fa9c0e7c80440a879630343b9d9a80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uyg101_behav xil_defaultlib.uyg101 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.blokRAM [blokram_default]
+Compiling architecture behavioral of entity xil_defaultlib.dosyadanOKU [dosyadanoku_default]
+Compiling architecture behavioral of entity xil_defaultlib.uyg101
+Built simulation snapshot uyg101_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 824.902 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg101_behav -key {Behavioral:sim_1:Functional:uyg101} -tclbatch {uyg101.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg101.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 824.902 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg101_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 824.902 ; gain = 0.000
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg101' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj uyg101_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg101
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 824.902 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f3fa9c0e7c80440a879630343b9d9a80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uyg101_behav xil_defaultlib.uyg101 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.blokRAM [blokram_default]
+Compiling architecture behavioral of entity xil_defaultlib.dosyadanOKU [dosyadanoku_default]
+Compiling architecture behavioral of entity xil_defaultlib.uyg101
+Built simulation snapshot uyg101_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 824.902 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg101_behav -key {Behavioral:sim_1:Functional:uyg101} -tclbatch {uyg101.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg101.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg101_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:23 . Memory (MB): peak = 824.902 ; gain = 0.000
+add_force {/uyg101/rst} -radix hex {0 0ns}
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 500 ns
+run 500 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: uyg101
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:35 ; elapsed = 00:00:32 . Memory (MB): peak = 923.293 ; gain = 79.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'uyg101' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd:21]
+	Parameter bitx bound to: 8 - type: integer 
+	Parameter adr_bits bound to: 4 - type: integer 
+	Parameter bitx bound to: 8 - type: integer 
+	Parameter adr_bits bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'blokRAM' declared at 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/imports/new/blokRAM.vhd:10' bound to instance 'RAM' of component 'blokRAM' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'blokRAM' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/imports/new/blokRAM.vhd:27]
+	Parameter bitx bound to: 8 - type: integer 
+	Parameter adr_bits bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'blokRAM' (1#1) [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/imports/new/blokRAM.vhd:27]
+INFO: [Synth 8-3491] module 'dosyadanOKU' declared at 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/imports/new/dosyadanOKU.vhd:9' bound to instance 'DOSYA_OKU' of component 'dosyadanOKU' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'dosyadanOKU' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/imports/new/dosyadanOKU.vhd:18]
+ERROR: [Synth 8-5765] size mismatch in assignment; read failed [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/imports/new/dosyadanOKU.vhd:30]
+ERROR: [Synth 8-285] failed synthesizing module 'dosyadanOKU' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/imports/new/dosyadanOKU.vhd:18]
+ERROR: [Synth 8-285] failed synthesizing module 'uyg101' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/new/uyg101.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:39 ; elapsed = 00:00:36 . Memory (MB): peak = 968.770 ; gain = 125.184
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+6 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg101' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj uyg101_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f3fa9c0e7c80440a879630343b9d9a80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uyg101_behav xil_defaultlib.uyg101 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 978.801 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg101_behav -key {Behavioral:sim_1:Functional:uyg101} -tclbatch {uyg101.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg101.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 978.801 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg101_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 978.801 ; gain = 8.230
+add_force {/uyg101/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg101/rst} -radix hex {0 0ns}
+run 500 ns
+run 500 ns
+run 100 ns
+run 100 ns
+Warning: TEXTIO function READ: line is empty
+Time: 2150 ns  Iteration: 0  Process: /uyg101/DOSYA_OKU/line__22  File: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum10_uyg1_/prj_bolum10_uyg1_.srcs/sources_1/imports/new/dosyadanOKU.vhd
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed

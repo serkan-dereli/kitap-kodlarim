@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jul  4 21:56:27 2019
+# Process ID: 1524
+# Current directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum4_uyg1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1400 E:\bildiri ve makaleler\kitap\fpga\uygulamalar\prj_bolum4_uyg1\prj_bolum4_uyg1.xpr
+# Log file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum4_uyg1/vivado.log
+# Journal file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum4_uyg1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum4_uyg1/prj_bolum4_uyg1.xpr}
+update_compile_order -fileset sources_1
+close_project
+create_project prj_bolum4_uyg2 {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum4_uyg2} -part xc7a100tcsg324-1
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum4_uyg2/prj_bolum4_uyg2.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum4_uyg2/prj_bolum4_uyg2.srcs/sources_1/new
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum4_uyg2/prj_bolum4_uyg2.srcs/sources_1/new
+file mkdir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum4_uyg2/prj_bolum4_uyg2.srcs/sources_1/new}
+close [ open {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum4_uyg2/prj_bolum4_uyg2.srcs/sources_1/new/Uyg42.vhd} w ]
+add_files {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum4_uyg2/prj_bolum4_uyg2.srcs/sources_1/new/Uyg42.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

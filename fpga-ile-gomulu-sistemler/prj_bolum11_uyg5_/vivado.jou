@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Sep  2 07:15:42 2019
+# Process ID: 6052
+# Current directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10200 E:\bildiri ve makaleler\kitap\fpga\uygulamalar\prj_bolum11_uyg5\prj_bolum11_uyg5.xpr
+# Log file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/vivado.log
+# Journal file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source uyg115.tcl
+add_force {/uyg115/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 500 us
+close_sim
+close_project
+open_project {E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source uyg115.tcl
+add_force {/uyg115/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 500 us
+run 500 us
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+create_wave_config; add_wave /; set_property needs_save false [current_wave_config]
+close_sim
+launch_simulation
+source uyg115.tcl
+add_force {/uyg115/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 500 us
+close_sim
+close_project
+open_project {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART/project_UART.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source uart_main.tcl
+close_sim
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list in_btn]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list in_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list in_rst]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list out_tx]]
+place_ports in_btn J15
+place_ports in_clk E3
+place_ports in_rst V10
+place_ports out_tx D4
+file mkdir {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.srcs/constrs_1/new}
+close [ open {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.srcs/constrs_1/new/uart_main.xdc} w ]
+add_files -fileset constrs_1 {{E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.srcs/constrs_1/new/uart_main.xdc}}
+set_property target_constrs_file {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.srcs/constrs_1/new/uart_main.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.runs/impl_1/uart_main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.runs/impl_1/uart_main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_project
+open_project {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source uart_main.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+startgroup
+set_property package_pin "" [get_ports [list  in_rst]]
+place_ports in_btn V10
+endgroup
+place_ports in_rst V11
+place_ports in_rst U11
+set_property IOSTANDARD LVCMOS33 [get_ports [list {in_data[7]} {in_data[6]} {in_data[5]} {in_data[4]} {in_data[3]} {in_data[2]} {in_data[1]} {in_data[0]}]]
+place_ports {in_data[0]} J15
+place_ports {in_data[1]} L16
+place_ports {in_data[2]} M13
+place_ports {in_data[3]} R15
+place_ports {in_data[4]} R17
+place_ports {in_data[5]} T18
+place_ports {in_data[6]} U18
+place_ports {in_data[7]} R13
+save_constraints
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.runs/impl_1/uart_main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.runs/impl_1/uart_main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

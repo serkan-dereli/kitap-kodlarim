@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="div_8bit_synth_1" LaunchDir="E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/div_8bit_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mult_8bit_synth_1" LaunchDir="E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg3/prj_bolum11_uyg3.runs/mult_8bit_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

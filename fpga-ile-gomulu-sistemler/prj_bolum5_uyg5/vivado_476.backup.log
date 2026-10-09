@@ -1,0 +1,113 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jul  8 01:10:59 2019
+# Process ID: 476
+# Current directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1164 E:\bildiri ve makaleler\kitap\fpga\uygulamalar\prj_bolum5_uyg5\prj_bolum5_uyg5.xpr
+# Log file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/vivado.log
+# Journal file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:42 ; elapsed = 00:00:21 . Memory (MB): peak = 713.059 ; gain = 16.172
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg55' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj uyg55_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto ab3a3086e46649698794b11c8966e34c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uyg55_behav xil_defaultlib.uyg55 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 745.207 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg55_behav -key {Behavioral:sim_1:Functional:uyg55} -tclbatch {uyg55.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg55.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 745.207 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg55_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 745.207 ; gain = 0.000
+add_force {/uyg55/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg55/rst} -radix hex {0 0ns}
+add_force {/uyg55/sec} -radix hex {1 0ns}
+add_force {/uyg55/sayi1} -radix hex {c 0ns}
+add_force {/uyg55/sayi2} -radix hex {6 0ns}
+run 100 ns
+add_force {/uyg55/sec} -radix hex {2 0ns}
+run 100 ns
+add_force {/uyg55/sec} -radix hex {3 0ns}
+run 100 ns
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: uyg55
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:35 ; elapsed = 00:00:33 . Memory (MB): peak = 865.879 ; gain = 83.230
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'uyg55' [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.srcs/sources_1/new/uyg55.vhd:20]
+WARNING: [Synth 8-6014] Unused sequential element s1_reg was removed.  [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.srcs/sources_1/new/uyg55.vhd:29]
+WARNING: [Synth 8-6014] Unused sequential element s2_reg was removed.  [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.srcs/sources_1/new/uyg55.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'uyg55' (1#1) [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.srcs/sources_1/new/uyg55.vhd:20]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:39 ; elapsed = 00:00:38 . Memory (MB): peak = 907.781 ; gain = 125.133
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 907.781 ; gain = 125.133
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:56 ; elapsed = 00:01:41 . Memory (MB): peak = 1279.336 ; gain = 496.688
+6 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:57 ; elapsed = 00:01:42 . Memory (MB): peak = 1279.336 ; gain = 496.688

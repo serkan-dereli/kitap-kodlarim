@@ -1,0 +1,849 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Sep  2 07:15:42 2019
+# Process ID: 6052
+# Current directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10200 E:\bildiri ve makaleler\kitap\fpga\uygulamalar\prj_bolum11_uyg5\prj_bolum11_uyg5.xpr
+# Log file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/vivado.log
+# Journal file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:19 . Memory (MB): peak = 709.875 ; gain = 32.820
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg115' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj uyg115_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/ip/Floating_KUCUK/Floating_KUCUK_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_floating_point_v7_1_5
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_axi_slave_2to1
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_carry_chain
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_carry_chain__parameterized0_2
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_carry_chain__parameterized1_3
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_compare_eq
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_compare_eq_im
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_compare_eq_im__parameterized0_0
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_compare_gt
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_compare_ne_im
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_compare_ne_im_1
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_delay__parameterized5
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_delay__parameterized6
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_delay__parameterized7
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_floating_point_v7_1_5_viv
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_fp_cmp
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_xbip_pipe_v3_0_4_viv
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_xbip_pipe_v3_0_4_viv__parameterized13
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_xbip_pipe_v3_0_4_viv__parameterized15
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_xbip_pipe_v3_0_4_viv__parameterized15_4
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj uyg115_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/new/uyg115.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg115
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 747.031 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '14' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 926208ed61ad4ea6a757ec39f3991646 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot uyg115_behav xil_defaultlib.uyg115 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.RandomSayi [\RandomSayi(n=32)\]
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.VCC
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.Floating_BUYUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_BUYUK_delay__parameteri...
+Compiling module xil_defaultlib.Floating_BUYUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_BUYUK_delay__parameteri...
+Compiling module xil_defaultlib.Floating_BUYUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_BUYUK_delay__parameteri...
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module unisims_ver.LUT6
+Compiling module xil_defaultlib.Floating_BUYUK_compare_eq
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_BUYUK_compare_eq_im__pa...
+Compiling module unisims_ver.LUT5
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_BUYUK_compare_ne_im
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module unisims_ver.LUT4
+Compiling module xil_defaultlib.Floating_BUYUK_compare_gt
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_BUYUK_compare_eq_im__pa...
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_BUYUK_compare_ne_im_1
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain
+Compiling module xil_defaultlib.Floating_BUYUK_compare_eq_im
+Compiling module xil_defaultlib.Floating_BUYUK_fp_cmp
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module xil_defaultlib.Floating_BUYUK_xbip_pipe_v3_0_4_...
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.Floating_BUYUK_axi_slave_2to1
+Compiling module xil_defaultlib.Floating_BUYUK_floating_point_v7...
+Compiling module xil_defaultlib.Floating_BUYUK_floating_point_v7...
+Compiling module xil_defaultlib.Floating_BUYUK
+Compiling module unisims_ver.FDRE_default_1
+Compiling module xil_defaultlib.Floating_KUCUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_KUCUK_delay__parameteri...
+Compiling module xil_defaultlib.Floating_KUCUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_KUCUK_delay__parameteri...
+Compiling module xil_defaultlib.Floating_KUCUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_KUCUK_delay__parameteri...
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_eq
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_eq_im__pa...
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_ne_im
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_gt
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_eq_im__pa...
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_ne_im_1
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain
+Compiling module xil_defaultlib.Floating_KUCUK_compare_eq_im
+Compiling module xil_defaultlib.Floating_KUCUK_fp_cmp
+Compiling module xil_defaultlib.Floating_KUCUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_KUCUK_axi_slave_2to1
+Compiling module xil_defaultlib.Floating_KUCUK_floating_point_v7...
+Compiling module xil_defaultlib.Floating_KUCUK_floating_point_v7...
+Compiling module xil_defaultlib.Floating_KUCUK
+Compiling architecture behavioral of entity xil_defaultlib.blokRAM [blokram_default]
+Compiling architecture behavioral of entity xil_defaultlib.uyg115
+Built simulation snapshot uyg115_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/bildiri -notrace
+couldn't read file "E:/bildiri": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep  2 07:20:21 2019...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 747.031 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '26' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg115_behav -key {Behavioral:sim_1:Functional:uyg115} -tclbatch {uyg115.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg115.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 764.188 ; gain = 17.156
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg115_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:23 ; elapsed = 00:00:51 . Memory (MB): peak = 764.188 ; gain = 17.156
+add_force {/uyg115/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 500 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 764.188 ; gain = 0.000
+close_project
+open_project {E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 765.836 ; gain = 1.648
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg115' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj uyg115_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/ip/Floating_KUCUK/Floating_KUCUK_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_floating_point_v7_1_5
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_axi_slave_2to1
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_carry_chain
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_carry_chain__parameterized0_2
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_carry_chain__parameterized1_3
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_compare_eq
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_compare_eq_im
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_compare_eq_im__parameterized0_0
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_compare_gt
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_compare_ne_im
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_compare_ne_im_1
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_delay__parameterized5
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_delay__parameterized6
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_delay__parameterized7
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_floating_point_v7_1_5_viv
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_fp_cmp
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_xbip_pipe_v3_0_4_viv
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_xbip_pipe_v3_0_4_viv__parameterized13
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_xbip_pipe_v3_0_4_viv__parameterized15
+INFO: [VRFC 10-311] analyzing module Floating_KUCUK_xbip_pipe_v3_0_4_viv__parameterized15_4
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/ip/Floating_BUYUK/Floating_BUYUK_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_floating_point_v7_1_5
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_axi_slave_2to1
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_carry_chain
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_carry_chain__parameterized0_2
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_carry_chain__parameterized1_3
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_compare_eq
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_compare_eq_im
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_compare_eq_im__parameterized0_0
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_compare_gt
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_compare_ne_im
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_compare_ne_im_1
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_delay__parameterized5
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_delay__parameterized6
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_delay__parameterized7
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_floating_point_v7_1_5_viv
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_fp_cmp
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_xbip_pipe_v3_0_4_viv
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_xbip_pipe_v3_0_4_viv__parameterized13
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_xbip_pipe_v3_0_4_viv__parameterized15
+INFO: [VRFC 10-311] analyzing module Floating_BUYUK_xbip_pipe_v3_0_4_viv__parameterized15_4
+"xvhdl --incr --relax -prj uyg115_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/new/uyg115.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg115
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 765.836 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '19' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 926208ed61ad4ea6a757ec39f3991646 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot uyg115_behav xil_defaultlib.uyg115 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.RandomSayi [\RandomSayi(n=32)\]
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.VCC
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.Floating_BUYUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_BUYUK_delay__parameteri...
+Compiling module xil_defaultlib.Floating_BUYUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_BUYUK_delay__parameteri...
+Compiling module xil_defaultlib.Floating_BUYUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_BUYUK_delay__parameteri...
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module unisims_ver.LUT6
+Compiling module xil_defaultlib.Floating_BUYUK_compare_eq
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_BUYUK_compare_eq_im__pa...
+Compiling module unisims_ver.LUT5
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_BUYUK_compare_ne_im
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module unisims_ver.LUT4
+Compiling module xil_defaultlib.Floating_BUYUK_compare_gt
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_BUYUK_compare_eq_im__pa...
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_BUYUK_compare_ne_im_1
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain
+Compiling module xil_defaultlib.Floating_BUYUK_compare_eq_im
+Compiling module xil_defaultlib.Floating_BUYUK_fp_cmp
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module xil_defaultlib.Floating_BUYUK_xbip_pipe_v3_0_4_...
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.Floating_BUYUK_axi_slave_2to1
+Compiling module xil_defaultlib.Floating_BUYUK_floating_point_v7...
+Compiling module xil_defaultlib.Floating_BUYUK_floating_point_v7...
+Compiling module xil_defaultlib.Floating_BUYUK
+Compiling module unisims_ver.FDRE_default_1
+Compiling module xil_defaultlib.Floating_KUCUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_KUCUK_delay__parameteri...
+Compiling module xil_defaultlib.Floating_KUCUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_KUCUK_delay__parameteri...
+Compiling module xil_defaultlib.Floating_KUCUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_KUCUK_delay__parameteri...
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_eq
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_eq_im__pa...
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_ne_im
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_gt
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_eq_im__pa...
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_ne_im_1
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain
+Compiling module xil_defaultlib.Floating_KUCUK_compare_eq_im
+Compiling module xil_defaultlib.Floating_KUCUK_fp_cmp
+Compiling module xil_defaultlib.Floating_KUCUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_KUCUK_axi_slave_2to1
+Compiling module xil_defaultlib.Floating_KUCUK_floating_point_v7...
+Compiling module xil_defaultlib.Floating_KUCUK_floating_point_v7...
+Compiling module xil_defaultlib.Floating_KUCUK
+Compiling architecture behavioral of entity xil_defaultlib.uyg115
+Built simulation snapshot uyg115_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/bildiri -notrace
+couldn't read file "E:/bildiri": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep  2 07:34:36 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 765.836 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '18' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg115_behav -key {Behavioral:sim_1:Functional:uyg115} -tclbatch {uyg115.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg115.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg115_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:45 . Memory (MB): peak = 765.836 ; gain = 0.000
+add_force {/uyg115/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 500 us
+run 500 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Mon Sep  2 08:34:57 2019] Launched synth_1...
+Run output will be captured here: E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.runs/synth_1/runme.log
+create_wave_config; add_wave /; set_property needs_save false [current_wave_config]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'uyg115' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj uyg115_vlog.prj"
+"xvhdl --incr --relax -prj uyg115_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/new/uyg115.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uyg115
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 782.895 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 926208ed61ad4ea6a757ec39f3991646 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot uyg115_behav xil_defaultlib.uyg115 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.RandomSayi [\RandomSayi(n=32)\]
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.VCC
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.Floating_BUYUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_BUYUK_delay__parameteri...
+Compiling module xil_defaultlib.Floating_BUYUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_BUYUK_delay__parameteri...
+Compiling module xil_defaultlib.Floating_BUYUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_BUYUK_delay__parameteri...
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module unisims_ver.LUT6
+Compiling module xil_defaultlib.Floating_BUYUK_compare_eq
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_BUYUK_compare_eq_im__pa...
+Compiling module unisims_ver.LUT5
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_BUYUK_compare_ne_im
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module unisims_ver.LUT4
+Compiling module xil_defaultlib.Floating_BUYUK_compare_gt
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_BUYUK_compare_eq_im__pa...
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_BUYUK_compare_ne_im_1
+Compiling module xil_defaultlib.Floating_BUYUK_carry_chain
+Compiling module xil_defaultlib.Floating_BUYUK_compare_eq_im
+Compiling module xil_defaultlib.Floating_BUYUK_fp_cmp
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module xil_defaultlib.Floating_BUYUK_xbip_pipe_v3_0_4_...
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.Floating_BUYUK_axi_slave_2to1
+Compiling module xil_defaultlib.Floating_BUYUK_floating_point_v7...
+Compiling module xil_defaultlib.Floating_BUYUK_floating_point_v7...
+Compiling module xil_defaultlib.Floating_BUYUK
+Compiling module unisims_ver.FDRE_default_1
+Compiling module xil_defaultlib.Floating_KUCUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_KUCUK_delay__parameteri...
+Compiling module xil_defaultlib.Floating_KUCUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_KUCUK_delay__parameteri...
+Compiling module xil_defaultlib.Floating_KUCUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_KUCUK_delay__parameteri...
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_eq
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_eq_im__pa...
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_ne_im
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_gt
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_eq_im__pa...
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain__para...
+Compiling module xil_defaultlib.Floating_KUCUK_compare_ne_im_1
+Compiling module xil_defaultlib.Floating_KUCUK_carry_chain
+Compiling module xil_defaultlib.Floating_KUCUK_compare_eq_im
+Compiling module xil_defaultlib.Floating_KUCUK_fp_cmp
+Compiling module xil_defaultlib.Floating_KUCUK_xbip_pipe_v3_0_4_...
+Compiling module xil_defaultlib.Floating_KUCUK_axi_slave_2to1
+Compiling module xil_defaultlib.Floating_KUCUK_floating_point_v7...
+Compiling module xil_defaultlib.Floating_KUCUK_floating_point_v7...
+Compiling module xil_defaultlib.Floating_KUCUK
+Compiling architecture behavioral of entity xil_defaultlib.uyg115
+Built simulation snapshot uyg115_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 782.895 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '17' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/bildiri ve makaleler/2019/makale/kutahya fbe dergisi/x/prj_bolum11_uyg5/prj_bolum11_uyg5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uyg115_behav -key {Behavioral:sim_1:Functional:uyg115} -tclbatch {uyg115.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uyg115.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 782.895 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uyg115_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:36 . Memory (MB): peak = 782.895 ; gain = 0.000
+add_force {/uyg115/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 500 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART/project_UART.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 815.273 ; gain = 27.629
+update_compile_order -fileset sources_1
+close_project
+open_project {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'uart_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj uart_main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART/project_UART.srcs/sources_1/new/uart_tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uart_tx
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.srcs/sources_1/new/uart_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uart_main
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 815.273 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 224a18d848f14c03bd2d0e568ae49aa8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uart_main_behav xil_defaultlib.uart_main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling architecture behavioral of entity xil_defaultlib.uart_tx [uart_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.uart_main
+Built simulation snapshot uart_main_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/PH -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "E:/PH" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep  2 20:09:05 2019...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 815.273 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uart_main_behav -key {Behavioral:sim_1:Functional:uart_main} -tclbatch {uart_main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uart_main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uart_main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:24 . Memory (MB): peak = 815.273 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs synth_1 -jobs 2
+[Mon Sep  2 20:09:24 2019] Launched synth_1...
+Run output will be captured here: E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1196.102 ; gain = 380.828
+set_property IOSTANDARD LVCMOS33 [get_ports [list in_btn]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list in_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list in_rst]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list out_tx]]
+place_ports in_btn J15
+place_ports in_clk E3
+place_ports in_rst V10
+place_ports out_tx D4
+file mkdir {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.srcs/constrs_1/new}
+close [ open {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.srcs/constrs_1/new/uart_main.xdc} w ]
+add_files -fileset constrs_1 {{E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.srcs/constrs_1/new/uart_main.xdc}}
+set_property target_constrs_file {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.srcs/constrs_1/new/uart_main.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Mon Sep  2 20:18:08 2019] Launched synth_1...
+Run output will be captured here: E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.runs/synth_1/runme.log
+[Mon Sep  2 20:18:09 2019] Launched impl_1...
+Run output will be captured here: E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Sep  2 20:41:10 2019] Launched impl_1...
+Run output will be captured here: E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292745928A
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2260.598 ; gain = 545.484
+set_property PROGRAM.FILE {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.runs/impl_1/uart_main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.runs/impl_1/uart_main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_project
+close_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2290.992 ; gain = 0.000
+open_project {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2290.992 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'uart_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj uart_main_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.srcs/sources_1/new/uart_main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uart_main
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2290.992 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 224a18d848f14c03bd2d0e568ae49aa8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot uart_main_behav xil_defaultlib.uart_main -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling architecture behavioral of entity xil_defaultlib.uart_tx [uart_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.uart_main
+Built simulation snapshot uart_main_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2290.992 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uart_main_behav -key {Behavioral:sim_1:Functional:uart_main} -tclbatch {uart_main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source uart_main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2290.992 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uart_main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 2290.992 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 2290.992 ; gain = 0.000
+launch_runs synth_1 -jobs 2
+[Mon Sep  2 21:25:35 2019] Launched synth_1...
+Run output will be captured here: E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.srcs/constrs_1/new/uart_main.xdc]
+Finished Parsing XDC File [E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.srcs/constrs_1/new/uart_main.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 2336.449 ; gain = 45.457
+startgroup
+set_property package_pin "" [get_ports [list  in_rst]]
+place_ports in_btn V10
+endgroup
+place_ports in_rst V11
+place_ports in_rst U11
+set_property IOSTANDARD LVCMOS33 [get_ports [list {in_data[7]} {in_data[6]} {in_data[5]} {in_data[4]} {in_data[3]} {in_data[2]} {in_data[1]} {in_data[0]}]]
+place_ports {in_data[0]} J15
+place_ports {in_data[1]} L16
+place_ports {in_data[2]} M13
+place_ports {in_data[3]} R15
+place_ports {in_data[4]} R17
+place_ports {in_data[5]} T18
+place_ports {in_data[6]} U18
+place_ports {in_data[7]} R13
+save_constraints
+launch_runs impl_1 -jobs 2
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.387 . Memory (MB): peak = 2345.777 ; gain = 0.000
+[Mon Sep  2 21:32:24 2019] Launched impl_1...
+Run output will be captured here: E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2345.777 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Sep  2 21:44:35 2019] Launched impl_1...
+Run output will be captured here: E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2345.777 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292745928A
+set_property PROGRAM.FILE {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.runs/impl_1/uart_main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/PH thesis/doktora tez/FPGA/FPGA DEVRE TASARIMLARIM/other/project_UART_main/project_UART_main.runs/impl_1/uart_main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292745928A
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  3 12:33:57 2019...

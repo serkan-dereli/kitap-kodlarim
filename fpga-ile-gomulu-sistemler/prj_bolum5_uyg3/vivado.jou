@@ -1,0 +1,249 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Jul  7 07:19:09 2019
+# Process ID: 936
+# Current directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2188 E:\bildiri ve makaleler\kitap\fpga\uygulamalar\prj_bolum5_uyg3\prj_bolum5_uyg3.xpr
+# Log file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg3/vivado.log
+# Journal file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg3/prj_bolum5_uyg3.xpr}
+update_compile_order -fileset sources_1
+close_project
+create_project prj_bolum5_uyg4 {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4} -part xc7a100tcsg324-1
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4/prj_bolum5_uyg4.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4/prj_bolum5_uyg4.srcs/sources_1/new
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4/prj_bolum5_uyg4.srcs/sources_1/new
+file mkdir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4/prj_bolum5_uyg4.srcs/sources_1/new}
+close [ open {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4/prj_bolum5_uyg4.srcs/sources_1/new/uyg54.vhd} w ]
+add_files {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4/prj_bolum5_uyg4.srcs/sources_1/new/uyg54.vhd}}
+update_compile_order -fileset sources_1
+close_project
+create_project prj_bolum5_uyg4 {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4} -part xc7a100tcsg324-1
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4/prj_bolum5_uyg4.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4/prj_bolum5_uyg4.srcs/sources_1/new
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4/prj_bolum5_uyg4.srcs/sources_1/new
+file mkdir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4/prj_bolum5_uyg4.srcs/sources_1/new}
+close [ open {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4/prj_bolum5_uyg4.srcs/sources_1/new/uyg54.vhd} w ]
+add_files {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4/prj_bolum5_uyg4.srcs/sources_1/new/uyg54.vhd}}
+update_compile_order -fileset sources_1
+launch_simulation
+source uyg54.tcl
+add_force {/uyg54/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg54/rst} -radix hex {0 0ns}
+add_force {/uyg54/secim} -radix hex {10 0ns}
+add_force {/uyg54/secim} -radix hex {2 0ns}
+add_force {/uyg54/say1} -radix hex {5 0ns}
+add_force {/uyg54/say2} -radix hex {c 0ns}
+run 100 ns
+add_force {/uyg54/say1} -radix hex {d 0ns}
+add_force {/uyg54/say2} -radix hex {9 0ns}
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg54.tcl
+add_force {/uyg54/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg54/rst} -radix hex {0 0ns}
+add_force {/uyg54/secim} -radix hex {2 0ns}
+add_force {/uyg54/say1} -radix hex {d 0ns}
+add_force {/uyg54/say2} -radix hex {9 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg54.tcl
+add_force {/uyg54/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg54/rst} -radix hex {0 0ns}
+add_force {/uyg54/secim} -radix hex {1 0ns}
+add_force {/uyg54/say1} -radix hex {d 0ns}
+add_force {/uyg54/say2} -radix hex {6 0ns}
+run 100 ns
+add_bp {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4/prj_bolum5_uyg4.srcs/sources_1/new/uyg54.vhd} 25
+remove_bps -file {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg4/prj_bolum5_uyg4.srcs/sources_1/new/uyg54.vhd} -line 25
+close_sim
+launch_simulation
+source uyg54.tcl
+add_force {/uyg54/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg54/rst} -radix hex {0 0ns}
+add_force {/uyg54/say1} -radix hex {d 0ns}
+add_force {/uyg54/say2} -radix hex {6 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg54.tcl
+close_sim
+launch_simulation
+source uyg54.tcl
+add_force {/uyg54/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg54/rst} -radix hex {0 0ns}
+add_force {/uyg54/say1} -radix hex {d 0ns}
+add_force {/uyg54/say2} -radix hex {6 0ns}
+run 100 ns
+add_force {/uyg54/say1} -radix hex {3 0ns}
+run 100 ns
+add_force {/uyg54/say1} -radix hex {8 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg54.tcl
+add_force {/uyg54/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg54/rst} -radix hex {0 0ns}
+add_force {/uyg54/say1} -radix hex {8 0ns}
+add_force {/uyg54/say2} -radix hex {6 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg54.tcl
+add_force {/uyg54/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg54/say1} -radix hex {d 0ns}
+add_force {/uyg54/say2} -radix hex {8 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg54.tcl
+add_force {/uyg54/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg54/say1} -radix hex {d 0ns}
+add_force {/uyg54/say2} -radix hex {9 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg54.tcl
+add_force {/uyg54/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg54/say1} -radix hex {5 0ns}
+add_force {/uyg54/say2} -radix hex {3 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg54.tcl
+add_force {/uyg54/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg54/say1} -radix hex {a 0ns}
+add_force {/uyg54/say2} -radix hex {8 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg54.tcl
+add_force {/uyg54/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg54/say1} -radix hex {c 0ns}
+add_force {/uyg54/say2} -radix hex {9 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg54.tcl
+add_force {/uyg54/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg54/say1} -radix hex {c 0ns}
+add_force {/uyg54/say2} -radix hex {9 0ns}
+run 100 ns
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source uyg54.tcl
+add_force {/uyg54/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg54/anahtar} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/uyg54/anahtar} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source uyg54.tcl
+add_force {/uyg54/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg54/anahtar} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/uyg54/anahtar} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/uyg54/rst} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/uyg54/rst} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/uyg54/anahtar} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/uyg54/anahtar} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+close_project
+create_project prj_bolum5_uyg5 {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5} -part xc7a100tcsg324-1
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.srcs/sources_1/new
+file mkdir E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.srcs/sources_1/new
+file mkdir {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.srcs/sources_1/new}
+close [ open {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.srcs/sources_1/new/uyg55.vhd} w ]
+add_files {{E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum5_uyg5/prj_bolum5_uyg5.srcs/sources_1/new/uyg55.vhd}}
+update_compile_order -fileset sources_1
+launch_simulation
+source uyg55.tcl
+add_force {/uyg55/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg55/sayi1} -radix hex {8 0ns}
+add_force {/uyg55/sayi2} -radix hex {2 0ns}
+add_force {/uyg55/sayi2} -radix hex {5 0ns}
+run 100 ns
+add_force {/uyg55/sayi2} -radix hex {a 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg55.tcl
+add_force {/uyg55/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg55/sayi1} -radix hex {c 0ns}
+add_force {/uyg55/sayi2} -radix hex {e 0ns}
+run 100 ns
+close_sim
+synth_design -rtl -name rtl_1
+launch_simulation
+source uyg55.tcl
+add_force {/uyg55/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg55/sayi1} -radix hex {e 0ns}
+add_force {/uyg55/sayi2} -radix hex {5 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source uyg55.tcl
+add_force {/uyg55/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uyg55/rst} -radix hex {0 0ns}
+add_force {/uyg55/sec} -radix hex {1 0ns}
+add_force {/uyg55/sayi1} -radix hex {c 0ns}
+add_force {/uyg55/sayi2} -radix hex {6 0ns}
+run 100 ns
+add_force {/uyg55/sec} -radix hex {2 0ns}
+run 100 ns
+add_force {/uyg55/sec} -radix hex {3 0ns}
+run 100 ns

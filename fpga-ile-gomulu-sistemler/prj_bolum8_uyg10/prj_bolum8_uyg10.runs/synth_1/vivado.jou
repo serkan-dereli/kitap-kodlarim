@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Aug  6 06:14:10 2019
+# Process ID: 6676
+# Current directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg10/prj_bolum8_uyg10.runs/synth_1
+# Command line: vivado.exe -log uyg10.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uyg10.tcl
+# Log file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg10/prj_bolum8_uyg10.runs/synth_1/uyg10.vds
+# Journal file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum8_uyg10/prj_bolum8_uyg10.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source uyg10.tcl -notrace

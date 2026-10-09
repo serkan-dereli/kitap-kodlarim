@@ -1,0 +1,110 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 972
+License: Customer
+
+Current time: 	Sat Aug 10 08:12:36 GMT+02:00 2019
+Time zone: 	GMT+02:00 (GMT+02:00)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 110 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	dell
+User home directory: C:/Users/dell
+User working directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg3
+User country: 	TR
+User language: 	tr
+User locale: 	tr_TR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/dell/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/dell/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/dell/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg3/vivado.log
+Vivado journal file location: 	E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg3/vivado.jou
+Engine tmp dir: 	E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg3/.Xil/Vivado-972-dell-Bilgisayar
+
+GUI allocated memory:	180 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 480 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 39 MB (+38696kb) [00:00:20]
+// [Engine Memory]: 480 MB (+351361kb) [00:00:20]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: E:\bildiri ve makaleler\kitap\fpga\uygulamalar\prj_bolum9_uyg3\prj_bolum9_uyg3.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 496 MB. GUI used memory: 33 MB. Current time: 8/10/19 8:12:37 AM GMT+02:00
+// Tcl Message: open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg3/prj_bolum9_uyg3.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg3/prj_bolum9_uyg3.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 512 MB (+9344kb) [00:00:31]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 58 MB (+17601kb) [00:00:35]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 541 MB. GUI used memory: 37 MB. Current time: 8/10/19 8:12:54 AM GMT+02:00
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 740.645 ; gain = 30.285 
+// [Engine Memory]: 541 MB (+3514kb) [00:00:43]
+// Project name: prj_bolum9_uyg3; location: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg3; part: xc7a100tcsg324-1
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 4000 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (uyg903.vhd) elapsed time: 0.6s
+// Elapsed time: 57 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uyg903(Behavioral) (uyg903.vhd)]", 1, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uyg903(Behavioral) (uyg903.vhd)]", 1, false, false, false, false, false, true); // B (D, cj) - Double Click
+// [GUI Memory]: 61 MB (+187kb) [00:01:45]
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+// [GUI Memory]: 65 MB (+568kb) [00:02:20]
+// [GUI Memory]: 68 MB (+358kb) [00:02:45]
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// [GUI Memory]: 72 MB (+305kb) [00:14:11]
+// Elapsed time: 776 seconds
+selectCodeEditor("uyg903.vhd", 30, 230); // cd (w, cj)
+typeControlKey((HResource) null, "uyg903.vhd", 'c'); // cd (w, cj)
+// [GUI Memory]: 76 MB (+375kb) [00:16:25]
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 40 MB. Current time: 8/10/19 8:42:59 AM GMT+02:00
+// [GUI Memory]: 80 MB (+106kb) [00:36:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 36 MB. Current time: 8/10/19 9:12:59 AM GMT+02:00
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 36 MB. Current time: 8/10/19 9:43:00 AM GMT+02:00
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// [GUI Memory]: 85 MB (+484kb) [01:39:39]
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 37 MB. Current time: 8/10/19 10:13:00 AM GMT+02:00
+// [GUI Memory]: 89 MB (+629kb) [02:28:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 36 MB. Current time: 8/10/19 10:43:00 AM GMT+02:00

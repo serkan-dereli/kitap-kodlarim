@@ -1,0 +1,124 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 14340
+License: Customer
+
+Current time: 	Sun Jan 02 11:58:55 EET 2022
+Time zone: 	Eastern European Time (Asia/Istanbul)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 2
+Available disk space: 148 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	lenovo
+User home directory: C:/Users/lenovo
+User working directory: D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1
+User country: 	TR
+User language: 	tr
+User locale: 	tr_TR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1/vivado.log
+Vivado journal file location: 	D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1/vivado.jou
+Engine tmp dir: 	D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1/.Xil/Vivado-14340-DERELISCOMPUTER
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	191 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 776 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: D:\USBbellek32GB\bildiri - makaleler - kitap - patent - proje\kitap\fpga ile gömülü sistemler\uygulamalar\prj_bolum9_uyg1\prj_bolum9_uyg1.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1/prj_bolum9_uyg1.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 107 MB (+109592kb) [00:00:09]
+// [Engine Memory]: 728 MB (+611482kb) [00:00:09]
+// [GUI Memory]: 119 MB (+6933kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  2645 ms.
+// Tcl Message: open_project {D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1/prj_bolum9_uyg1.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 776 MB. GUI used memory: 118 MB. Current time: 1/2/22, 11:58:55 AM EET
+// Project name: prj_bolum9_uyg1; location: D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1; part: xc7a100tcsg324-1
+// [Engine Memory]: 781 MB (+18182kb) [00:00:11]
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (uyg901.vhd) elapsed time: 0.2s
+// Elapsed time: 113 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uyg901(Behavioral) (uyg901.vhd)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uyg901(Behavioral) (uyg901.vhd)]", 1, false, false, false, false, false, true); // B (F, cr) - Double Click
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, cr)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, cr)
+selectCodeEditor("uyg901.vhd", 207, 160); // ch (w, cr)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cr)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (O, cr)
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cr)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: uyg901 
+// HMemoryUtils.trashcanNow. Engine heap size: 971 MB. GUI used memory: 57 MB. Current time: 1/2/22, 12:01:04 PM EET
+// TclEventType: ELABORATE_START

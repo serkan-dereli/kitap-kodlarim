@@ -1,0 +1,426 @@
+
+*** Running vivado
+    with args -log Floating_KUCUK.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Floating_KUCUK.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Floating_KUCUK.tcl -notrace
+Command: synth_design -top Floating_KUCUK -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6460 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 348.738 ; gain = 94.895
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Floating_KUCUK' [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/ip/Floating_KUCUK/synth/Floating_KUCUK.vhd:74]
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 1 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 1 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_5' declared at 'e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/ip/Floating_KUCUK/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_5' [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/ip/Floating_KUCUK/synth/Floating_KUCUK.vhd:206]
+INFO: [Synth 8-256] done synthesizing module 'Floating_KUCUK' (12#1) [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/ip/Floating_KUCUK/synth/Floating_KUCUK.vhd:74]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized1 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized11 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port CARRYS_OUT[14]
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port CARRYS_OUT[13]
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port CARRYS_OUT[12]
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port CARRYS_OUT[11]
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port CARRYS_OUT[10]
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port CARRYS_OUT[9]
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port CARRYS_OUT[8]
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port CARRYS_OUT[7]
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port CARRYS_OUT[6]
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port CARRYS_OUT[5]
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port CARRYS_OUT[4]
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port CARRYS_OUT[3]
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port CARRYS_OUT[2]
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port CARRYS_OUT[1]
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized9 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized2 has unconnected port CARRYS_OUT[9]
+WARNING: [Synth 8-3331] design carry_chain__parameterized2 has unconnected port CARRYS_OUT[8]
+WARNING: [Synth 8-3331] design carry_chain__parameterized2 has unconnected port CARRYS_OUT[7]
+WARNING: [Synth 8-3331] design carry_chain__parameterized2 has unconnected port CARRYS_OUT[6]
+WARNING: [Synth 8-3331] design carry_chain__parameterized2 has unconnected port CARRYS_OUT[5]
+WARNING: [Synth 8-3331] design carry_chain__parameterized2 has unconnected port CARRYS_OUT[4]
+WARNING: [Synth 8-3331] design carry_chain__parameterized2 has unconnected port CARRYS_OUT[3]
+WARNING: [Synth 8-3331] design carry_chain__parameterized2 has unconnected port CARRYS_OUT[2]
+WARNING: [Synth 8-3331] design carry_chain__parameterized2 has unconnected port CARRYS_OUT[1]
+WARNING: [Synth 8-3331] design carry_chain__parameterized2 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized7 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized1 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design compare_eq_im__parameterized0 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design compare_ne_im has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain has unconnected port CARRYS_OUT[1]
+WARNING: [Synth 8-3331] design carry_chain has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design compare_eq_im has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design axi_slave_2to1 has unconnected port s_axis_a_tuser[0]
+WARNING: [Synth 8-3331] design axi_slave_2to1 has unconnected port s_axis_a_tlast
+WARNING: [Synth 8-3331] design axi_slave_2to1 has unconnected port s_axis_b_tuser[0]
+WARNING: [Synth 8-3331] design axi_slave_2to1 has unconnected port s_axis_b_tlast
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv has unconnected port SINIT
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port m_axis_result_tuser[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port m_axis_result_tlast
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port aclken
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port aresetn
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_b_tuser[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_b_tlast
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tvalid
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[31]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[30]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[29]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[28]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[27]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[26]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[25]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[24]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[23]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[22]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[21]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[20]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[19]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[18]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[17]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[16]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[15]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[14]
+WARNING: [Synth 8-3331] design floating_point_v7_1_5_viv has unconnected port s_axis_c_tdata[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 445.293 ; gain = 191.449
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 445.293 ; gain = 191.449
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/ip/Floating_KUCUK/Floating_KUCUK_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.srcs/sources_1/ip/Floating_KUCUK/Floating_KUCUK_ooc.xdc] for cell 'U0'
+Parsing XDC File [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.runs/Floating_KUCUK_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.runs/Floating_KUCUK_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  FDE => FDRE: 5 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 747.344 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:57 ; elapsed = 00:01:16 . Memory (MB): peak = 747.344 ; gain = 493.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:57 ; elapsed = 00:01:16 . Memory (MB): peak = 747.344 ; gain = 493.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  {E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.runs/Floating_KUCUK_synth_1/dont_touch.xdc}, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:16 . Memory (MB): peak = 747.344 ; gain = 493.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:59 ; elapsed = 00:01:18 . Memory (MB): peak = 747.344 ; gain = 493.500
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized9) to 'U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized9) to 'U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized9) to 'U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized9) to 'U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/COMP_OP.SPD.OP/CMP_COND_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'U0/i_synth/COMP_OP.SPD.OP/CMP_COND_DELAY/i_pipe/opt_has_pipe.first_q_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\COMP_OP.SPD.OP/CMP_COND_DELAY/i_pipe/opt_has_pipe.first_q_reg[2] )
+INFO: [Synth 8-3332] Sequential element (COMP_OP.SPD.OP/CMP_COND_DELAY/i_pipe/opt_has_pipe.first_q_reg[2]) is unused and will be removed from module floating_point_v7_1_5_viv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:20 . Memory (MB): peak = 747.344 ; gain = 493.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:44 . Memory (MB): peak = 747.344 ; gain = 493.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:44 . Memory (MB): peak = 755.379 ; gain = 501.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:24 ; elapsed = 00:01:44 . Memory (MB): peak = 765.691 ; gain = 511.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:45 . Memory (MB): peak = 765.691 ; gain = 511.848
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:45 . Memory (MB): peak = 765.691 ; gain = 511.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:25 ; elapsed = 00:01:45 . Memory (MB): peak = 765.691 ; gain = 511.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:25 ; elapsed = 00:01:45 . Memory (MB): peak = 765.691 ; gain = 511.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:25 ; elapsed = 00:01:45 . Memory (MB): peak = 765.691 ; gain = 511.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:25 ; elapsed = 00:01:45 . Memory (MB): peak = 765.691 ; gain = 511.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |     6|
+|2     |LUT3  |    66|
+|3     |LUT4  |    36|
+|4     |LUT5  |     4|
+|5     |LUT6  |    27|
+|6     |MUXCY |    42|
+|7     |FDE   |     5|
+|8     |FDRE  |   140|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:25 ; elapsed = 00:01:45 . Memory (MB): peak = 765.691 ; gain = 511.848
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 52 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:01:19 . Memory (MB): peak = 765.691 ; gain = 209.797
+Synthesis Optimization Complete : Time (s): cpu = 00:01:25 ; elapsed = 00:01:45 . Memory (MB): peak = 765.691 ; gain = 511.848
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 12 instances
+  FDE => FDRE: 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:01:52 . Memory (MB): peak = 766.473 ; gain = 524.285
+INFO: [Common 17-1381] The checkpoint 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.runs/Floating_KUCUK_synth_1/Floating_KUCUK.dcp' has been generated.

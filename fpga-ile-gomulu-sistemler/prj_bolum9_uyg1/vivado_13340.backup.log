@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Jan  2 10:40:52 2022
+# Process ID: 13340
+# Current directory: D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18968 D:\USBbellek32GB\bildiri - makaleler - kitap - patent - proje\kitap\fpga ile gömülü sistemler\uygulamalar\prj_bolum9_uyg1\prj_bolum9_uyg1.xpr
+# Log file: D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1/vivado.log
+# Journal file: D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1/prj_bolum9_uyg1.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1'
+INFO: [Project 1-313] Project file moved from 'E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum9_uyg1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'prj_bolum9_uyg1.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 746.750 ; gain = 116.129
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: uyg901
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1253.848 ; gain = 212.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'uyg901' [D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1/prj_bolum9_uyg1.srcs/sources_1/new/uyg901.vhd:18]
+ERROR: [Synth 8-3302] unable to open file 'c:\tahlil_sonuc.txt' in 'r' mode [D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1/prj_bolum9_uyg1.srcs/sources_1/new/uyg901.vhd:23]
+ERROR: [Synth 8-285] failed synthesizing module 'uyg901' [D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1/prj_bolum9_uyg1.srcs/sources_1/new/uyg901.vhd:18]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1326.160 ; gain = 285.281
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+2 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: uyg901
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1326.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'uyg901' [D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1/prj_bolum9_uyg1.srcs/sources_1/new/uyg901.vhd:18]
+ERROR: [Synth 8-5765] size mismatch in assignment; read failed [D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1/prj_bolum9_uyg1.srcs/sources_1/new/uyg901.vhd:30]
+ERROR: [Synth 8-285] failed synthesizing module 'uyg901' [D:/USBbellek32GB/bildiri - makaleler - kitap - patent - proje/kitap/fpga ile gömülü sistemler/uygulamalar/prj_bolum9_uyg1/prj_bolum9_uyg1.srcs/sources_1/new/uyg901.vhd:18]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1326.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan  2 11:47:04 2022...

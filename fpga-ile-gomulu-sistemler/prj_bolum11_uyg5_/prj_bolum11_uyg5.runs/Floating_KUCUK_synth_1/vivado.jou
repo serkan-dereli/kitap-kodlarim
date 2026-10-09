@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Aug 19 11:50:44 2019
+# Process ID: 5212
+# Current directory: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.runs/Floating_KUCUK_synth_1
+# Command line: vivado.exe -log Floating_KUCUK.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Floating_KUCUK.tcl
+# Log file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.runs/Floating_KUCUK_synth_1/Floating_KUCUK.vds
+# Journal file: E:/bildiri ve makaleler/kitap/fpga/uygulamalar/prj_bolum11_uyg5/prj_bolum11_uyg5.runs/Floating_KUCUK_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Floating_KUCUK.tcl -notrace
