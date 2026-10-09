@@ -1,0 +1,11 @@
+clc;
+clear all;
+a=imread('sekil4.png');
+a_gri=rgb2gray(a);
+a_bw=im2bw(a_gri);
+se=strel('disk',7);
+b=imclose(a_bw,se);
+img_bw=imcomplement(b);
+figure(1); imshow(a);
+figure(2); imshow(b);
+figure(3); imshow(img_bw);
